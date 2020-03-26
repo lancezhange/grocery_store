@@ -1,5 +1,5 @@
 module.exports = {
-  base: "/grocery_store", // 设置站点根路径
+  base: "/grocery_store/", // 设置站点根路径
   repo: "https://github.com/lancezhange/grocery_store",
 
   markdown: {
