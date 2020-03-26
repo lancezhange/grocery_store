@@ -25,7 +25,7 @@ footer: MIT Licensed | Lancezhange
 
 很多章节还未完成，许多内容也会不断更新，完成之日尚不可期。
 
-本文档较早的版本可以在 [gitbook.com](https://www.gitbook.com/book/lancezhange/better-to-know-programming-basics-for-job-intervi/details) 上在线阅读和下载(pdf/epub/mobi 版)。由于 gitbook 当前不再是一个合适的开源工具，因此，本文档当前已经迁移到 `Vuepress`,地址[在此](http://www.lancezhange.com/grocery-store-of-lancezhange/).
+本文档较早的版本可以在 [gitbook.com](https://www.gitbook.com/book/lancezhange/better-to-know-programming-basics-for-job-intervi/details) 上在线阅读和下载(pdf/epub/mobi 版)。由于 gitbook 当前不再是一个合适的开源工具，因此，本文档当前已经迁移到 `Vuepress`,地址[在此](http://www.lancezhange.com/grocery_store/).
 
 最后，之前记的笔记参考了很多网络上的资料，特别是对一些讲得比较令我以为然的，索性直接摘抄过来了（包括一些图片等材料），有些当时也可能没有留下原文链接，如果有版权的问题，还望海涵，侵删。2020 年 3 月下旬开始的笔记，将至少保留原文链接。
 
