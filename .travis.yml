@@ -14,11 +14,20 @@ branches:
   only:
     - note
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: docs/.vuepress/dist
-  github_token: $GITHUB_TOKEN # A token generated on GitHub allowing Travis to push code on you repository. Set in the Travis settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   local_dir: docs/.vuepress/dist
+#   github_token: $GITHUB_TOKEN # A token generated on GitHub allowing Travis to push code on you repository. Set in the Travis settings page of your repository, as a secure variable
+#   keep_history: true
+#   on:
+#     branch: master
+
+after_script:
+  - cd ./docs/.vuepress/dist
+  - git init
+  - git config user.name "lancezhange"
+  - git config user.email "lancezhange@gmail.com"
+  - git add .
+  - git commit -m "Travis CI Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+  - git push --force --quiet "https://${GITHUB_TOKEN}@$github.com/lancezhage/grocery_store.git" master:master
