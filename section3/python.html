@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python | Lancezhange Vuepress Book</title>
+    <meta name="description" content="Learner">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+  <link rel="stylesheet" href="/grocery_store/css/index.css">
+    
+    <link rel="preload" href="/grocery_store/assets/css/0.styles.892fb305.css" as="style"><link rel="preload" href="/grocery_store/assets/js/app.47d3b9e2.js" as="script"><link rel="preload" href="/grocery_store/assets/js/3.e15ba04f.js" as="script"><link rel="preload" href="/grocery_store/assets/js/75.acb4412a.js" as="script"><link rel="prefetch" href="/grocery_store/assets/js/10.666a773f.js"><link rel="prefetch" href="/grocery_store/assets/js/100.2b4d646e.js"><link rel="prefetch" href="/grocery_store/assets/js/101.de9d1a6c.js"><link rel="prefetch" href="/grocery_store/assets/js/102.85a31c0d.js"><link rel="prefetch" href="/grocery_store/assets/js/103.4d080f12.js"><link rel="prefetch" href="/grocery_store/assets/js/104.54bedf13.js"><link rel="prefetch" href="/grocery_store/assets/js/105.60e9e099.js"><link rel="prefetch" href="/grocery_store/assets/js/106.46204467.js"><link rel="prefetch" href="/grocery_store/assets/js/107.bd63530e.js"><link rel="prefetch" href="/grocery_store/assets/js/108.85a7fb4a.js"><link rel="prefetch" href="/grocery_store/assets/js/109.b3cce710.js"><link rel="prefetch" href="/grocery_store/assets/js/11.a878cb18.js"><link rel="prefetch" href="/grocery_store/assets/js/110.b71213ca.js"><link rel="prefetch" href="/grocery_store/assets/js/111.88e3c009.js"><link rel="prefetch" href="/grocery_store/assets/js/112.672c0e9c.js"><link rel="prefetch" href="/grocery_store/assets/js/113.9f626878.js"><link rel="prefetch" href="/grocery_store/assets/js/114.e971f677.js"><link rel="prefetch" href="/grocery_store/assets/js/115.32931221.js"><link rel="prefetch" href="/grocery_store/assets/js/116.7d7bb8e9.js"><link rel="prefetch" href="/grocery_store/assets/js/117.d1d64952.js"><link rel="prefetch" href="/grocery_store/assets/js/118.371e7dde.js"><link rel="prefetch" href="/grocery_store/assets/js/119.7187d3ac.js"><link rel="prefetch" href="/grocery_store/assets/js/12.7971495d.js"><link rel="prefetch" href="/grocery_store/assets/js/120.3f89d6c5.js"><link rel="prefetch" href="/grocery_store/assets/js/121.78a87a30.js"><link rel="prefetch" href="/grocery_store/assets/js/122.d2df534e.js"><link rel="prefetch" href="/grocery_store/assets/js/123.c95b11ab.js"><link rel="prefetch" href="/grocery_store/assets/js/124.0fb28081.js"><link rel="prefetch" href="/grocery_store/assets/js/125.ff76a45e.js"><link rel="prefetch" href="/grocery_store/assets/js/126.9328300b.js"><link rel="prefetch" href="/grocery_store/assets/js/127.a6a2f599.js"><link rel="prefetch" href="/grocery_store/assets/js/128.4f59b6b2.js"><link rel="prefetch" href="/grocery_store/assets/js/129.7ad23ac2.js"><link rel="prefetch" href="/grocery_store/assets/js/13.c108b008.js"><link rel="prefetch" href="/grocery_store/assets/js/130.ff450918.js"><link rel="prefetch" href="/grocery_store/assets/js/131.0c23ac4e.js"><link rel="prefetch" href="/grocery_store/assets/js/132.39985100.js"><link rel="prefetch" href="/grocery_store/assets/js/133.97d11e72.js"><link rel="prefetch" href="/grocery_store/assets/js/134.f7f5be44.js"><link rel="prefetch" href="/grocery_store/assets/js/135.8d032916.js"><link rel="prefetch" href="/grocery_store/assets/js/136.5f8428a0.js"><link rel="prefetch" href="/grocery_store/assets/js/137.68ec6b04.js"><link rel="prefetch" href="/grocery_store/assets/js/138.594feaf1.js"><link rel="prefetch" href="/grocery_store/assets/js/139.712936f1.js"><link rel="prefetch" href="/grocery_store/assets/js/14.c8cecf72.js"><link rel="prefetch" href="/grocery_store/assets/js/140.e462485b.js"><link rel="prefetch" href="/grocery_store/assets/js/141.f7e3b64c.js"><link rel="prefetch" href="/grocery_store/assets/js/142.a1f358ef.js"><link rel="prefetch" href="/grocery_store/assets/js/143.7bd36db2.js"><link rel="prefetch" href="/grocery_store/assets/js/144.cfa08961.js"><link rel="prefetch" href="/grocery_store/assets/js/145.8d25c175.js"><link rel="prefetch" href="/grocery_store/assets/js/146.8205975e.js"><link rel="prefetch" href="/grocery_store/assets/js/147.cf326d2a.js"><link rel="prefetch" href="/grocery_store/assets/js/148.0d0d0e35.js"><link rel="prefetch" href="/grocery_store/assets/js/149.f913ee12.js"><link rel="prefetch" href="/grocery_store/assets/js/15.b2a89722.js"><link rel="prefetch" href="/grocery_store/assets/js/150.b5d4816c.js"><link rel="prefetch" href="/grocery_store/assets/js/151.3e654989.js"><link rel="prefetch" href="/grocery_store/assets/js/152.0ed89a9b.js"><link rel="prefetch" href="/grocery_store/assets/js/153.8e227ca1.js"><link rel="prefetch" href="/grocery_store/assets/js/154.a2831255.js"><link rel="prefetch" href="/grocery_store/assets/js/155.10ccf9ac.js"><link rel="prefetch" href="/grocery_store/assets/js/156.380d2724.js"><link rel="prefetch" href="/grocery_store/assets/js/157.c81733eb.js"><link rel="prefetch" href="/grocery_store/assets/js/158.cbfc3908.js"><link rel="prefetch" href="/grocery_store/assets/js/159.a6d3ae98.js"><link rel="prefetch" href="/grocery_store/assets/js/16.fd35c607.js"><link rel="prefetch" href="/grocery_store/assets/js/160.7255e3b5.js"><link rel="prefetch" href="/grocery_store/assets/js/161.904010dd.js"><link rel="prefetch" href="/grocery_store/assets/js/162.4dec98b6.js"><link rel="prefetch" href="/grocery_store/assets/js/163.37a5ff7f.js"><link rel="prefetch" href="/grocery_store/assets/js/164.88a4ed0a.js"><link rel="prefetch" href="/grocery_store/assets/js/165.e5de4c12.js"><link rel="prefetch" href="/grocery_store/assets/js/166.acb3ac67.js"><link rel="prefetch" href="/grocery_store/assets/js/167.922fe947.js"><link rel="prefetch" href="/grocery_store/assets/js/168.9b5decdc.js"><link rel="prefetch" href="/grocery_store/assets/js/169.774f7b4f.js"><link rel="prefetch" href="/grocery_store/assets/js/17.94989432.js"><link rel="prefetch" href="/grocery_store/assets/js/170.74cc7593.js"><link rel="prefetch" href="/grocery_store/assets/js/171.f22f02e1.js"><link rel="prefetch" href="/grocery_store/assets/js/172.795a7607.js"><link rel="prefetch" href="/grocery_store/assets/js/173.6a9852b2.js"><link rel="prefetch" href="/grocery_store/assets/js/174.24096d24.js"><link rel="prefetch" href="/grocery_store/assets/js/175.e1f80709.js"><link rel="prefetch" href="/grocery_store/assets/js/176.89e20247.js"><link rel="prefetch" href="/grocery_store/assets/js/177.90f78411.js"><link rel="prefetch" href="/grocery_store/assets/js/178.7cad688f.js"><link rel="prefetch" href="/grocery_store/assets/js/179.869c8720.js"><link rel="prefetch" href="/grocery_store/assets/js/18.dd69d970.js"><link rel="prefetch" href="/grocery_store/assets/js/180.c18e296f.js"><link rel="prefetch" href="/grocery_store/assets/js/19.e3521f6f.js"><link rel="prefetch" href="/grocery_store/assets/js/2.6f311729.js"><link rel="prefetch" href="/grocery_store/assets/js/20.cdd37c03.js"><link rel="prefetch" href="/grocery_store/assets/js/21.74481991.js"><link rel="prefetch" href="/grocery_store/assets/js/22.13aba632.js"><link rel="prefetch" href="/grocery_store/assets/js/23.faf985dd.js"><link rel="prefetch" href="/grocery_store/assets/js/24.7790407e.js"><link rel="prefetch" href="/grocery_store/assets/js/25.cc831358.js"><link rel="prefetch" href="/grocery_store/assets/js/26.5b918371.js"><link rel="prefetch" href="/grocery_store/assets/js/27.1fb985ed.js"><link rel="prefetch" href="/grocery_store/assets/js/28.4f194089.js"><link rel="prefetch" href="/grocery_store/assets/js/29.0e71c38a.js"><link rel="prefetch" href="/grocery_store/assets/js/30.9f05173d.js"><link rel="prefetch" href="/grocery_store/assets/js/31.5e341171.js"><link rel="prefetch" href="/grocery_store/assets/js/32.a550c1a0.js"><link rel="prefetch" href="/grocery_store/assets/js/33.8a828405.js"><link rel="prefetch" href="/grocery_store/assets/js/34.f7e62a92.js"><link rel="prefetch" href="/grocery_store/assets/js/35.711fbf92.js"><link rel="prefetch" href="/grocery_store/assets/js/36.b9fe8ec6.js"><link rel="prefetch" href="/grocery_store/assets/js/37.a924be53.js"><link rel="prefetch" href="/grocery_store/assets/js/38.e8f0d4cf.js"><link rel="prefetch" href="/grocery_store/assets/js/39.4cc4d0f7.js"><link rel="prefetch" href="/grocery_store/assets/js/4.2b8a6a17.js"><link rel="prefetch" href="/grocery_store/assets/js/40.39fd33ca.js"><link rel="prefetch" href="/grocery_store/assets/js/41.aa2d5c38.js"><link rel="prefetch" href="/grocery_store/assets/js/42.2e653320.js"><link rel="prefetch" href="/grocery_store/assets/js/43.60b064bc.js"><link rel="prefetch" href="/grocery_store/assets/js/44.b9efc4b4.js"><link rel="prefetch" href="/grocery_store/assets/js/45.9345a9b8.js"><link rel="prefetch" href="/grocery_store/assets/js/46.58671855.js"><link rel="prefetch" href="/grocery_store/assets/js/47.e8dced2f.js"><link rel="prefetch" href="/grocery_store/assets/js/48.623a8708.js"><link rel="prefetch" href="/grocery_store/assets/js/49.3da43528.js"><link rel="prefetch" href="/grocery_store/assets/js/5.41bb00f7.js"><link rel="prefetch" href="/grocery_store/assets/js/50.e8b509c0.js"><link rel="prefetch" href="/grocery_store/assets/js/51.57dea248.js"><link rel="prefetch" href="/grocery_store/assets/js/52.2a653b34.js"><link rel="prefetch" href="/grocery_store/assets/js/53.7e9a38b7.js"><link rel="prefetch" href="/grocery_store/assets/js/54.a6d6a228.js"><link rel="prefetch" href="/grocery_store/assets/js/55.6589895a.js"><link rel="prefetch" href="/grocery_store/assets/js/56.f2fcde50.js"><link rel="prefetch" href="/grocery_store/assets/js/57.8fbc4361.js"><link rel="prefetch" href="/grocery_store/assets/js/58.e5afed15.js"><link rel="prefetch" href="/grocery_store/assets/js/59.2c8ca963.js"><link rel="prefetch" href="/grocery_store/assets/js/6.31d3db0c.js"><link rel="prefetch" href="/grocery_store/assets/js/60.79a70c57.js"><link rel="prefetch" href="/grocery_store/assets/js/61.9fef88bd.js"><link rel="prefetch" href="/grocery_store/assets/js/62.e375e524.js"><link rel="prefetch" href="/grocery_store/assets/js/63.5952f2d6.js"><link rel="prefetch" href="/grocery_store/assets/js/64.2695a163.js"><link rel="prefetch" href="/grocery_store/assets/js/65.96a95c08.js"><link rel="prefetch" href="/grocery_store/assets/js/66.82c501b5.js"><link rel="prefetch" href="/grocery_store/assets/js/67.c3dfe33d.js"><link rel="prefetch" href="/grocery_store/assets/js/68.8d61e8ca.js"><link rel="prefetch" href="/grocery_store/assets/js/69.ffb2c059.js"><link rel="prefetch" href="/grocery_store/assets/js/7.390fea20.js"><link rel="prefetch" href="/grocery_store/assets/js/70.487b0cd7.js"><link rel="prefetch" href="/grocery_store/assets/js/71.698c9666.js"><link rel="prefetch" href="/grocery_store/assets/js/72.baf6aad0.js"><link rel="prefetch" href="/grocery_store/assets/js/73.a28c801a.js"><link rel="prefetch" href="/grocery_store/assets/js/74.fb3ba6d3.js"><link rel="prefetch" href="/grocery_store/assets/js/76.3bd634b6.js"><link rel="prefetch" href="/grocery_store/assets/js/77.db356fda.js"><link rel="prefetch" href="/grocery_store/assets/js/78.c7912e34.js"><link rel="prefetch" href="/grocery_store/assets/js/79.2144dc16.js"><link rel="prefetch" href="/grocery_store/assets/js/8.aee987bd.js"><link rel="prefetch" href="/grocery_store/assets/js/80.d6fbf3d8.js"><link rel="prefetch" href="/grocery_store/assets/js/81.e21a47d6.js"><link rel="prefetch" href="/grocery_store/assets/js/82.7f4636b3.js"><link rel="prefetch" href="/grocery_store/assets/js/83.440942f4.js"><link rel="prefetch" href="/grocery_store/assets/js/84.f0d9a8fe.js"><link rel="prefetch" href="/grocery_store/assets/js/85.39c6b930.js"><link rel="prefetch" href="/grocery_store/assets/js/86.75218340.js"><link rel="prefetch" href="/grocery_store/assets/js/87.b103ab9e.js"><link rel="prefetch" href="/grocery_store/assets/js/88.ac661b1d.js"><link rel="prefetch" href="/grocery_store/assets/js/89.92e470b3.js"><link rel="prefetch" href="/grocery_store/assets/js/9.ad4b2757.js"><link rel="prefetch" href="/grocery_store/assets/js/90.b2e04d90.js"><link rel="prefetch" href="/grocery_store/assets/js/91.8a00aaec.js"><link rel="prefetch" href="/grocery_store/assets/js/92.f7d023f2.js"><link rel="prefetch" href="/grocery_store/assets/js/93.9128c36a.js"><link rel="prefetch" href="/grocery_store/assets/js/94.6280de17.js"><link rel="prefetch" href="/grocery_store/assets/js/95.ea00692f.js"><link rel="prefetch" href="/grocery_store/assets/js/96.a140f30e.js"><link rel="prefetch" href="/grocery_store/assets/js/97.ea5254e3.js"><link rel="prefetch" href="/grocery_store/assets/js/98.9e168926.js"><link rel="prefetch" href="/grocery_store/assets/js/99.c5f861f8.js">
+    <link rel="stylesheet" href="/grocery_store/assets/css/0.styles.892fb305.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/grocery_store/" class="home-link router-link-active"><!----> <span class="site-name">Lancezhange Vuepress Book</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/grocery_store/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/grocery_store/SUMMARY/" class="nav-link">
+  Contents
+</a></div><div class="nav-item"><a href="http://www.lancezhange.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/grocery_store/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/grocery_store/SUMMARY/" class="nav-link">
+  Contents
+</a></div><div class="nav-item"><a href="http://www.lancezhange.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/grocery_store/section3/" class="sidebar-link">编程基础</a></li><li><a href="/grocery_store/section3/cpp.html" class="sidebar-link">C++ 知识点 {ignore=ture}</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/grocery_store/section3/cpp.html#c-语法关键" class="sidebar-link">C++ 语法关键</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/cpp.html#stl" class="sidebar-link">STL</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/cpp.html#并行编程" class="sidebar-link">并行编程</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/cpp.html#常用库" class="sidebar-link">常用库</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/cpp.html#参考资料" class="sidebar-link">参考资料</a></li></ul></li><li><a href="/grocery_store/section3/python.html" class="active sidebar-link">Python</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#语言特性" class="sidebar-link">语言特性</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#环境" class="sidebar-link">环境</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#日志" class="sidebar-link">日志</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#基本数据结构" class="sidebar-link">基本数据结构</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#pystyle" class="sidebar-link">pystyle</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#numpy" class="sidebar-link">numpy</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#python-环境管理" class="sidebar-link">python 环境管理</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#高级语法" class="sidebar-link">高级语法</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#常用" class="sidebar-link">常用</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#疑难点" class="sidebar-link">疑难点</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#多进程并行-parallel-multiprocessing" class="sidebar-link">多进程并行 Parallel Multiprocessing</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#应用" class="sidebar-link">应用</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#python3-8" class="sidebar-link">python3.8</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/python.html#参考资料" class="sidebar-link">参考资料</a></li></ul></li><li><a href="/grocery_store/section3/java.html" class="sidebar-link">Java {ignore=true}</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/grocery_store/section3/java.html#硬语法" class="sidebar-link">硬语法</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/java.html#高质量库" class="sidebar-link">高质量库</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/java.html#jvm" class="sidebar-link">JVM</a></li><li class="sidebar-sub-header"><a href="/grocery_store/section3/java.html#参考资料" class="sidebar-link">参考资料</a></li></ul></li><li><a href="/grocery_store/section3/r.html" class="sidebar-link">R</a></li><li><a href="/grocery_store/section3/scala.html" class="sidebar-link">Scala</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/grocery_store/section3/javascript.html" class="sidebar-link">javascript</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="python"><a href="#python" class="header-anchor">#</a> Python</h1> <p></p><div class="table-of-contents"><ul><li><a href="#语言特性">语言特性</a></li><li><a href="#环境">环境</a></li><li><a href="#日志">日志</a></li><li><a href="#基本数据结构">基本数据结构</a><ul><li><a href="#宏">宏</a></li><li><a href="#元类-metaclass">元类(metaclass)</a></li><li><a href="#鸭子类型">鸭子类型</a></li><li><a href="#单元测试">单元测试</a></li></ul></li><li><a href="#pystyle">pystyle</a><ul><li><a href="#滑动-卷-往后倒-求平均-周平均">滑动 卷 往后倒 求平均 周平均</a></li><li><a href="#等频聚合，例如，按周聚合，">等频聚合，例如，按周聚合，</a></li><li><a href="#推荐这种方式">推荐这种方式</a></li></ul></li><li><a href="#numpy">numpy</a><ul><li><a href="#sklern">============= sklern</a></li></ul></li><li><a href="#python-环境管理">python 环境管理</a></li><li><a href="#高级语法">高级语法</a></li><li><a href="#常用">常用</a><ul><li><a href="#启动脚本个性化">启动脚本个性化</a></li><li><a href="#pep8">PEP8</a></li></ul></li><li><a href="#疑难点">疑难点</a><ul><li><a href="#函数的默认参数">函数的默认参数</a></li></ul></li><li><a href="#多进程并行-parallel-multiprocessing">多进程并行 Parallel Multiprocessing</a></li><li><a href="#应用">应用</a><ul><li><a href="#替换目录下所有文件中的某个关键词">替换目录下所有文件中的某个关键词</a></li></ul></li><li><a href="#python3-8">python3.8</a></li><li><a href="#参考资料">参考资料</a></li></ul></div><p></p> <h2 id="语言特性"><a href="#语言特性" class="header-anchor">#</a> 语言特性</h2> <blockquote><p>所有的变量都可以理解是内存中一个对象的“引用”</p></blockquote> <h2 id="环境"><a href="#环境" class="header-anchor">#</a> 环境</h2> <p><code>brew upgrade python # 安装 python3</code></p> <div class="language- extra-class"><pre class="language-text"><code>Python has been installed as
+  /usr/local/bin/python3
+3.7.3
+
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python/libexec/bin
+
+If you need Homebrew's Python 2.7 run
+  brew install python@2
+
+Pip, setuptools, and wheel have been installed. To update them run
+  pip3 install --upgrade pip setuptools wheel
+
+You can install Python packages with
+  pip3 install &lt;package&gt;
+They will install into the site-package directory
+  /usr/local/lib/python3.7/site-packages
+</code></pre></div><p><code>/Users/zhangxisheng/anaconda/bin/jupyter notebook</code> 用 python2 作为主环境的 jupyter notebook</p> <p><code>brew info python</code>
+会发现，我的机器上其实有 2.7， 3.6 和 3.7 多个环境！</p> <p>将 python 3.6 路径加入 path 之后，python3 又可以关联到 python 3.6 了！
+但是 pip3 还是 python 3.7 的（通过 pip3 --version 可以看到）</p> <p>那么，python3.6 如何安装包呢</p> <p><code>python3 -m pip install --upgrade sacredboard</code>
+or
+<code>alias pip3='python3 -m pip'</code> (但是 sudo pip3 依然用的是系统的 3.7)</p> <p>因此，以后==全部用 anaconda 版本的==</p> <p>下载速度慢，换源
+<code>python3 -m pip install --upgrade scikit-image -i https://pypi.tuna.tsinghua.edu.cn/simple</code> 用清华的源</p> <div class="language-python extra-class"><pre class="language-python"><code>PACKAGE_DIR <span class="token operator">=</span> <span class="token string">'/Users/zhangxisheng/github_opensouced_project/deep-ctr-prediction'</span>
+sys<span class="token punctuation">.</span>path<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> PACKAGE_DIR<span class="token punctuation">)</span>
+</code></pre></div><h2 id="日志"><a href="#日志" class="header-anchor">#</a> 日志</h2> <p>log</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> logging
+logging<span class="token punctuation">.</span>basicConfig<span class="token punctuation">(</span><span class="token builtin">format</span><span class="token operator">=</span><span class="token string">'%(asctime)s : %(levelname)s : %(message)s'</span><span class="token punctuation">,</span> level<span class="token operator">=</span>logging<span class="token punctuation">.</span>ERROR<span class="token punctuation">)</span>
+</code></pre></div><p>try:
+except:</p> <h2 id="基本数据结构"><a href="#基本数据结构" class="header-anchor">#</a> 基本数据结构</h2> <ol><li><strong>带有默认值的字典</strong></li></ol> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> collections <span class="token keyword">import</span> defaultdict
+d <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+d <span class="token operator">=</span> defaultdict<span class="token punctuation">(</span><span class="token keyword">lambda</span><span class="token punctuation">:</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> d<span class="token punctuation">)</span>
+d<span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">]</span>
+</code></pre></div><ol start="2"><li><p>list comprehension
+<code>t = [True if (i == 'n' or i == 'v') else False for i in x.split(&quot;/&quot;)]</code></p></li> <li><p>flatMap 的一种实现：利用 reudce 函数
+reduce(list.<strong>add</strong>, [i.split(&quot;,&quot;) for i in x])
+或者较为复杂的 list comprehension
+flattened_list = [y for x in list_of_lists for y in x]</p></li></ol> <p>.lower() 小写</p> <p>叉积，组合，交叉
+for p in itertools.product([1, 2, 3], [4, 5]):
+print(p)</p> <p>for p in itertools.combinations([1,2,3],2):print(p)</p> <p>flattern</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> itertools
+
+a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+
+<span class="token builtin">list</span><span class="token punctuation">(</span>itertools<span class="token punctuation">.</span>chain<span class="token punctuation">.</span>from_iterable<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token builtin">sum</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-python extra-class"><pre class="language-python"><code>a <span class="token operator">=</span> <span class="token string">&quot;abcdef&quot;</span>
+it <span class="token operator">=</span> <span class="token builtin">iter</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+
+<span class="token builtin">next</span><span class="token punctuation">(</span>it<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token operator">*</span>it<span class="token punctuation">)</span>  <span class="token comment"># 剩余的元素</span>
+</code></pre></div><p>集合中随机选取元素
+import random
+for i in random.sample(poi_tag, 2):
+print i, poi_tag[i]</p> <h4 id="魔力方法-属性"><a href="#魔力方法-属性" class="header-anchor">#</a> 魔力方法/属性</h4> <p>我们知道，python 中，<strong>一切皆对象</strong>，同时，python 也是一门多范式的语言：面向过程/面向对象/函数式和谐共存，这背后的奥秘就是 <strong>magic method</strong>.</p> <p>事实上，许多运算符和内置函数都是用魔力方法实现的。例如，<em>+</em> 其实是 <code>__add__()</code>, <code>len()</code> 为 <code>__len__()</code>，而任何具有<code>__call__()</code> 方法的对象都被当做是函数。此外，<code>with</code><strong>上下文管理器</strong>也是借助<code>__enter__()</code> 和 <code>__exit__()</code>魔力函数实现的。</p> <p>如下列举一些重要的魔力方法和魔力属性</p> <ol><li><code>__dict__</code> : 属性列表，<code>object.attr</code> 其实就是 <code>object.__dict__[attr]</code>，许多内置类型，如 list, 都没有该属性；类的属性</li> <li><code>__class__</code>, <code>__bases__</code>,<code>__name__</code>,</li> <li><code>__slots__</code> 对拥有该属性的类的对象，只能对<code>__slots__</code>中列出的属性做设置</li> <li>用以包构建的，如 <code>__all__</code></li> <li><code>__setitem__</code></li> <li><code>__init__()</code>,<code>__new__</code></li></ol> <p>一个类的实例像函数一样被调用，就要借助 <strong>call</strong></p> <p><strong>init</strong> 其实是初始化方法，真正的构造方法是 <strong>new</strong>
+可以说，<strong>new</strong> 是个 static class method, 而 <strong>init</strong> 是 instance method</p> <div class="language- extra-class"><pre><code>Use __new__ when you need to control the creation of a new instance.
+Use __init__ when you need to control initialization of a new instance.*
+</code></pre></div><ol><li><code>__repr__</code>, <code>__str__</code></li> <li><code>__exit__(self, type, value, traceback)</code></li> <li><code>__iter__</code>(通常和 <code>yield</code> 一起用以定义可迭代类)</li> <li></li></ol> <p>class Foo(object):
+def <strong>init</strong>(self, a):
+print &quot;run in init&quot;
+print &quot;a = &quot;, a</p> <div class="language- extra-class"><pre><code>def __call__(self, *args):
+    print &quot;run in call&quot;
+    print &quot;args = &quot;, args
+</code></pre></div><p>f = Foo('ha') # 调用 init
+f(&quot;hb&quot;,&quot;hd&quot;) # 调用 call
+可见，<strong>call</strong> 等价于重载了括号运算符。</p> <p>中文字符串截取
+x.decode('utf8')[0:n].encode('utf8')</p> <p>中文字符</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># -*- coding: utf-8 -*-</span>
+
+<span class="token keyword">import</span> re
+
+s <span class="token operator">=</span> <span class="token string">u&quot;中华人民333dffg&quot;</span>
+match <span class="token operator">=</span> re<span class="token punctuation">.</span>match<span class="token punctuation">(</span>u<span class="token string">r&quot;[\u4e00-\u9fa5]+&quot;</span><span class="token punctuation">,</span> s<span class="token punctuation">)</span>
+<span class="token keyword">if</span> match<span class="token punctuation">:</span>
+    <span class="token keyword">print</span> match<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>二维数组遍历
+<code>','.join(str(item) for innerlist in a for item in innerlist)</code></p> <h4 id="动态类型"><a href="#动态类型" class="header-anchor">#</a> 动态类型</h4> <p>对象是存储在内存中的实体，程序中用到的名称不过是对象的引用。<strong>引用和对象分离</strong>
+乃是动态类型的核心。引用可以随时指向新的对象，各个引用之间互相独立。</p> <p>可变数据类型，如列表，可以通过引用改变自身，而不可变元素，如字符串，不能改变引用对象本身，只能改变引用的指向。</p> <p>函数的参数传递，本质上传递的是引用，因此，如果参数是不可变对象，则对参数的操作不会影响原对象，这类似于 C++中的值传递；但如果传递的是可变参数，则有可能改变原对象。</p> <h4 id="lamda-函数"><a href="#lamda-函数" class="header-anchor">#</a> lamda 函数</h4> <p>我最早是在 haskell 中见到匿名函数的，后来它被加入到了 python 以及 java 中。python 中定义 lamda 函数很简单：</p> <div class="language- extra-class"><pre><code>    func = lambda x,y: x+y
+</code></pre></div><p>其他函数式编程的经典函数如 map, filter, reduce 等，我最早也是在 haskell 中见到的。大多类似，不再赘述。</p> <h4 id="迭代器"><a href="#迭代器" class="header-anchor">#</a> 迭代器</h4> <ul><li>循环对象 例如 open() 返回的就是一个循环对象，具有 <code>next()</code> 方法，最终举出 <code>StopIteration</code> 错误</li> <li>迭代器 和循环对象没有差别装饰器</li> <li>生成器 用以构建用户自定义的循环对象，这要用到神秘的<code>yield</code>关键字</li></ul> <h4 id="装饰器"><a href="#装饰器" class="header-anchor">#</a> 装饰器</h4> <p>函数装饰器接受一个可调用对象作为参数，并返回一个新的可调用对象。
+装饰器也可以带有参数，从而更为灵活。</p> <p>类装饰器同理。</p> <p>例如，上下文管理也可以用 <em>contexlib</em> 模块用装饰器的方式实现。</p> <ul><li><p>@statcimethod</p></li> <li><p>@classmethod</p></li> <li><p>@property</p></li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">decorator</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> f<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span> <span class="token string">&quot;run in  decorator init&quot;</span>
+        self<span class="token punctuation">.</span>f <span class="token operator">=</span> f
+
+    <span class="token keyword">def</span> <span class="token function">__call__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span> <span class="token string">&quot;calling deperator&quot;</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>f<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">12</span>
+
+<span class="token decorator annotation punctuation">@decorator</span>
+<span class="token keyword">def</span> <span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">&quot;original a+b = &quot;</span><span class="token punctuation">,</span> a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
+</code></pre></div><p>上面这个例子中，是 class 作为装饰器，装饰了函数
+反过来，函数也可以用来装饰 class，例如，下面的 singleton 机制：</p> <div class="language-python extra-class"><pre class="language-python"><code>
+<span class="token keyword">def</span> <span class="token function">singleton</span><span class="token punctuation">(</span>cls<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    instances <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">def</span> <span class="token function">getinstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> cls <span class="token keyword">not</span> <span class="token keyword">in</span> instances<span class="token punctuation">:</span>
+            instances<span class="token punctuation">[</span>cls<span class="token punctuation">]</span> <span class="token operator">=</span> cls<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> instances<span class="token punctuation">[</span>cls<span class="token punctuation">]</span>
+    <span class="token keyword">return</span> getinstance
+
+<span class="token decorator annotation punctuation">@singleton</span>
+<span class="token keyword">class</span> <span class="token class-name">MyClass</span><span class="token punctuation">:</span>
+
+</code></pre></div><p>更多装饰器，参见 <a href="https://github.com/lord63/awesome-python-decorator" target="_blank" rel="noopener noreferrer">awesome python decorator<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>反射</p> <div class="language-python extra-class"><pre class="language-python"><code>m <span class="token operator">=</span> import_module<span class="token punctuation">(</span><span class="token string">&quot;src.modelzoo.ModelAnimal&quot;</span><span class="token punctuation">)</span>
+
+cls <span class="token operator">=</span> <span class="token builtin">getattr</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span><span class="token string">&quot;ModelAnimal&quot;</span><span class="token punctuation">)</span>
+
+c <span class="token operator">=</span> cls<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+c<span class="token punctuation">.</span>func<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>编码</p> <p>已经是 unicode 的字符串，需要原生 unicode 转义</p> <div class="language-python extra-class"><pre class="language-python"><code>x <span class="token operator">=</span> <span class="token string">&quot;\u676d\u5dde&quot;</span>
+x
+<span class="token comment"># '\\u676d\\u5dde'</span>
+<span class="token keyword">print</span> x
+<span class="token comment"># \u676d\u5dde</span>
+x <span class="token operator">=</span> x<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'raw_unicode_escape'</span><span class="token punctuation">)</span> <span class="token comment"># 等价于赋值的时候前缀u,例如： x= u&quot;\u676d\u5dde&quot;</span>
+x
+<span class="token comment"># u'\u676d\u5dde'</span>
+<span class="token keyword">print</span> x
+<span class="token comment"># 杭州</span>
+</code></pre></div><p>对于中文，正则</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> re
+
+pattern <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span>u<span class="token string">r'([道|路]+)([0-9]+)号'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">import</span> sys
+<span class="token builtin">reload</span><span class="token punctuation">(</span>sys<span class="token punctuation">)</span>
+sys<span class="token punctuation">.</span>setdefaultencoding<span class="token punctuation">(</span><span class="token string">'utf8'</span><span class="token punctuation">)</span>
+
+
+line <span class="token operator">=</span> <span class="token string">&quot;清华道2号&quot;</span>
+line <span class="token operator">=</span> <span class="token builtin">unicode</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+match <span class="token operator">=</span> pattern<span class="token punctuation">.</span>match<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+</code></pre></div><h3 id="宏"><a href="#宏" class="header-anchor">#</a> 宏</h3> <blockquote><p>MacroPy provides a mechanism for user-defined functions (macros) to perform transformations on the abstract syntax tree (AST) of a Python program at import time. This is an easy way to enhance the semantics of a Python program in ways which are otherwise impossible, for example providing an extremely concise way of declaring classes.</p></blockquote> <p>下面这段代码是怎么实现的？</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> macropy<span class="token punctuation">.</span>tracing <span class="token keyword">import</span> macros<span class="token punctuation">,</span> trace
+<span class="token keyword">with</span> trace<span class="token punctuation">:</span>
+    <span class="token builtin">sum</span> <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">sum</span> <span class="token operator">=</span> <span class="token builtin">sum</span> <span class="token operator">+</span> <span class="token number">5</span>
+</code></pre></div><p>MacroPy</p> <h4 id="闭式"><a href="#闭式" class="header-anchor">#</a> 闭式</h4> <p>闭式可以减少定义函数时的参数，例如可以利用闭包来定义泛函。</p> <h3 id="元类-metaclass"><a href="#元类-metaclass" class="header-anchor">#</a> 元类(metaclass)</h3> <p>我们说过，python 中一切皆对象，就连类也是对象（Classes are objects too）！
+那么，类是哪个类的对象呢？答案是 元类</p> <p>metaclass 是用来创建类对象的类。<code>__class__</code> 的 <code>__class__</code> 为 <code>type</code>, type 是 python 中内置的创建类的元类。
+type is the metaclass Python uses to create all classes behind the scenes.</p> <p>像 int，str，function ，其实都是 class
+type 最常见的还是看类型，但其实还能创建类，可谓身兼数职！这也是 python 语言中比较少见的的一个令人难以相信的东西。</p> <p>通过 type 创建类的一般格式</p> <p>type(name of the class,
+tuple of the parent class (for inheritance, can be empty),
+dictionary containing attributes names and values)</p> <p>因此，如下类的定义
+class Foo(object):
+... bar = True
+其实可以写为
+Foo = type('Foo', (), {'bar':True})</p> <p>这样的话，创建动态类简直易如反掌！</p> <p>自定义元类： <code>__metaclass__</code>，可以被赋值为任意可调用对象</p> <p>说了这么多，还是不明白什么是元类，元类有什么用？别着急，看<a href="https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python" target="_blank" rel="noopener noreferrer">这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>元类的创建：继承 type</p> <p>A metaclass is most commonly used as a class-factory.</p> <h3 id="鸭子类型"><a href="#鸭子类型" class="header-anchor">#</a> 鸭子类型</h3> <p>例如</p> <p>def echo(s):
+print s.str</p> <p>上面这个例子中，echo 函数的传入参数，只要可以取 str，就都可以，没有限制 s 的具体类型。</p> <h4 id="描述符"><a href="#描述符" class="header-anchor">#</a> 描述符</h4> <p>参考 <a href="http://pyzh.readthedocs.io/en/latest/Descriptor-HOW-TO-Guide.html" target="_blank" rel="noopener noreferrer">python 描述器引导<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><code>__get__</code>, <code>__set__</code> , <code>__delete__</code> ： 实现这三个方法中任意一个的对象叫做描述器</p> <p>默认对属性的访问控制是从对象的字典里面(<strong>dict</strong>)中获取(get), 设置(set)和删除(delete)它
+举例来说， a.x 的查找顺序是, a.<strong>dict</strong>['x'] , 然后 type(a).<strong>dict</strong>['x'] , 然后找 type(a) 的父类(不包括元类(metaclass)).如果查找到的值是一个描述器, Python 就会调用描述器的方法来重写默认的控制行为</p> <p>注意, 只有在新式类中时描述器才会起作用</p> <h4 id="继承"><a href="#继承" class="header-anchor">#</a> 继承</h4> <ol><li>super()</li> <li>MRO(method resolution order): 也就是通常说的继承顺序，并非简单的深度或者宽度优先，而是确保所有父类不会出现在子类之前</li> <li><code>self</code>, <code>cls</code></li></ol> <h4 id="协程"><a href="#协程" class="header-anchor">#</a> 协程</h4> <p>协程，用户级线程，可以<code>让原来要使用异步+回调方式写的非人类代码,可以用看似同步的方式写出来</code>。具体地，它可以保留上一次调用的状态，和线程相比，没有了线程切换的开销。</p> <p><code>yield</code>, <code>next()</code>, <code>.send()</code>, <code>.close()</code></p> <h4 id="并行"><a href="#并行" class="header-anchor">#</a> 并行</h4> <h4 id="自省-introspection"><a href="#自省-introspection" class="header-anchor">#</a> 自省(introspection)</h4> <p><code>dir</code>, <code>type</code>, <code>id</code></p> <p><code>inspect</code> 模块</p> <h4 id="性能优化建议-debug"><a href="#性能优化建议-debug" class="header-anchor">#</a> 性能优化建议/debug</h4> <p>debug： <em>pdb</em>模块</p> <p><a href="https://wiki.python.org/moin/PythonSpeed/PerformanceTips" target="_blank" rel="noopener noreferrer">官方 Performance Tips<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h5 id="c-接口"><a href="#c-接口" class="header-anchor">#</a> C 接口</h5> <ol><li>CDLL() 加载动态库，和 R 中的做法很相似。</li> <li>C API</li></ol> <h3 id="单元测试"><a href="#单元测试" class="header-anchor">#</a> 单元测试</h3> <p><a href="http://andrewliu.in/2015/12/12/Python%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E5%92%8CMock%E6%B5%8B%E8%AF%95/" target="_blank" rel="noopener noreferrer">Python 单元测试和　 Mock 测试<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h4 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h4> <ol><li><p>使用 <em>LBYL</em>(look before you leap, 例如前置 if 条件判断) 还是 <em>EAFP</em>(easy to ask forgiveness than permission，例如 <code>try--catch</code>)? 这里给出了一个<a href="http://stackoverflow.com/questions/5589532/try-catch-or-validation-for-speed/" target="_blank" rel="noopener noreferrer">建议<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p>不定长无名参数 <code>\*args</code>(元组) 和 不定长有名参数 <code>\*\*kwargs</code>（列表）</p></li> <li><p><code>python -m SimpleHTTPServer 8088</code> 文件共享从此 so easy.</p></li> <li><p><code>self</code> 并非关键字，而只是一个约定俗成的变量名</p></li></ol> <p>dict 的方法</p> <p>shop_id = shops.main_poi_id.values
+n_pois= shops.n_pois.values
+tag_map = dict((name, value) for name, value in zip(shop_id, n_pois))</p> <p>注意，字典是 dict， 不是 map</p> <p>assert len(data.poi_id.unique()) == data.shape[0], &quot;门店有重复！&quot;</p> <p>python3 环境
+conda create -n python3 python=3 anaconda
+(我的路径为 /Users/zhangxisheng/anaconda/envs/python3)</p> <p>(报错： <code>(eval):5: parse error near</code>|'`，后来查明，是因为我在 sitecustomized.py 中的配置中的干扰，去掉配置之后就可以了)</p> <p>启动环境: <code>source activate python3</code>
+这样激活之后，python3 才会打开 anaconda python3</p> <p>jupyter
+ipython notebook 即可启动</p> <p>jupyterlab 搜索启动</p> <h1 id="快速传入文件"><a href="#快速传入文件" class="header-anchor">#</a> 快速传入文件</h1> <p>python -m SimpleHTTPServer 8000 注意 windows 上用 powershell</p> <p>python3 中如下</p> <div class="language-python extra-class"><pre class="language-python"><code>python3 <span class="token operator">-</span>m http<span class="token punctuation">.</span>server <span class="token number">8000</span>
+</code></pre></div><p>json
+<code>print json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4)</code></p> <h2 id="pystyle"><a href="#pystyle" class="header-anchor">#</a> pystyle</h2> <div class="language-python extra-class"><pre class="language-python"><code>pycodestyle <span class="token operator">-</span><span class="token operator">-</span><span class="token builtin">max</span><span class="token operator">-</span>line<span class="token operator">-</span>length<span class="token operator">=</span><span class="token number">100</span> <span class="token operator">-</span><span class="token operator">-</span>exclude mlflow<span class="token operator">/</span>protos<span class="token punctuation">,</span>mlflow<span class="token operator">/</span>server<span class="token operator">/</span>js<span class="token punctuation">,</span>mlflow<span class="token operator">/</span>store<span class="token operator">/</span>db_migrations<span class="token punctuation">,</span>mlflow<span class="token operator">/</span>temporary_db_migrations_for_pre_1_users <span class="token operator">-</span><span class="token operator">-</span> mlflow tests
+pylint <span class="token operator">-</span><span class="token operator">-</span>msg<span class="token operator">-</span>template<span class="token operator">=</span><span class="token string">&quot;{path} ({line},{column}): [{msg_id} {symbol}] {msg}&quot;</span> <span class="token operator">-</span><span class="token operator">-</span>rcfile<span class="token operator">=</span><span class="token string">&quot;$FWDIR/pylintrc&quot;</span> <span class="token operator">-</span><span class="token operator">-</span> mlflow tests
+</code></pre></div><p><code>pycodestyle</code> (formerly called pep8) , Python style guide checker</p> <p><code>pycodestyle --show-source</code></p> <h1 id="细节"><a href="#细节" class="header-anchor">#</a> 细节</h1> <p>函数必须用 reutrn 返回返回值，如果想有返回值的话</p> <p>unique 是 函数， unique() 才得到值</p> <p>忽视警告
+import warnings
+warnings.filterwarnings(&quot;ignore&quot;)</p> <p>import warnings
+warnings.filterwarnings(&quot;ignore&quot;, category=DeprecationWarning)</p> <p>忽略命令行下警告错误的输出
+python -W ignore yourscript.py</p> <p>df.values dataFrame 转为 ndarray</p> <p>y = pd.DataFrame({'poi': x['b'].values, 'deal': x['a'].values, 'bu': x['c'].values, 'prob': x['d'].values}, columns=['poi', 'deal', 'bu', 'prob'])</p> <p>y.to_csv('/Users/zhangxisheng/Downloads/refund_reason_concerns_refuse_2017-10-19_new.txt', index=False)</p> <p>Series.values 返回 ndarray</p> <p>mask
+使用()括起筛选条件，多个筛选条件之间使用逻辑运算符&amp;,|,~与或非进行连接，特别注意，和我们平常使用 Python 不同，这里用 and,or,not 是行不通的</p> <p>data.ix[[231, 236]] 选取行
+对索引是整数的，按索引走；对索引是非整数的，按值走；因此，这个函数是应当摒弃的！</p> <p>既查又改的正确方式
+f.loc[f['a'] &lt;= 3, 'b'] = f.loc[f['a'] &lt;= 3, 'b'] / 10</p> <p>按照 index 列 选取的话，直接 loc 取就行
+df.loc[ind].head(100)
+如果反向选择，即取反，还得
+bad_df = df.index.isin([3,5])
+df[~bad_df]</p> <h1 id="select-the-5-largest-max-delays"><a href="#select-the-5-largest-max-delays" class="header-anchor">#</a> Select the 5 largest/max delays</h1> <p>delays.nlargest(5).sort_values()
+选取 N 最大并不需要全部排序！
+delays.nsmallest(5).sort_values()</p> <p>import heapq
+a = [1, 3, 2, 4, 5]
+heapq.nlargest(3, range(len(a)), a.<strong>getitem</strong>)</p> <p>实验记录
+sacred
+print_config
+with arg=&quot;value&quot;</p> <p>降维可视化
+hypertools
+hyp.plot(sample, n_clusters=2, explore=False, group='label')</p> <p>时间和日期
+datetime.datetime.strptime(x, '%Y-%m-%d %H:%M:%S')</p> <p>计算天数差值
+d1 = datetime.datetime.strptime('2017-08-03', '%Y-%m-%d')
+d2 = datetime.datetime.strptime('2017-08-02', '%Y-%m-%d')
+delta = d1 - d2
+print delta.days</p> <div class="error">Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'RangeIndex'</div> <p>======================================== dataFrame／pandas
+df = pd.DataFrame({'B': [4,5,6,7],'A': ['a','b', 'a', 'b'], 'C':['china', 'china', 'eglish', 'egnlish']})</p> <p>pd.read_csv(data_location, sep=feat_separator, header=None, na_values=&quot;null&quot;)
+读入数据时指定 na 值</p> <p>箱线图
+data[['label', 'hcg_t']].boxplot(by='label')</p> <p>Pandas 所支持的数据类型:</p> <ol><li>float</li> <li>int</li> <li>bool</li> <li>datetime64[ns]</li> <li>datetime64[ns, tz]</li> <li>timedelta[ns]</li> <li>category</li> <li>object
+默认的数据类型是 int64,float64.</li></ol> <p>from pandas.util import testing
+df = testing.makeDataFrame()</p> <p>df = pd.DataFrame()</p> <p>pd.read_clipboard()</p> <p>df_ta['delivery_duration'] = df_ta['delivery_duration'].astype['float']</p> <p>df.sample(5) # 随机抽取 5 条数据查看
+df.iloc[22] #利用 iloc 命令做行选取</p> <p>df.loc[22:25] #利用 loc 命令做行选取
+df.loc[[22,33,44]] #利用 loc 命令做指定行选取</p> <p>df['open_int'] = np.nan
+df['open_int'] = 999
+df['test'] = df.company_type == '民营企业'
+df.rename(index=str, columns={'test':'乱加的一列'}, inplace=True) #更改列名，并固化该操作</p> <p>df_test.drop([2,5],axis=0) #删除行
+df_test.drop(['列 1','列 2'], axis=1) #删除列
+df.date = df.date.map(lambda x: x.strftime('%Y-%m-%d')) #将时间数据转换为字符串</p> <p>df['fs_roe'].mean() #计算平均数
+df['fs_roe'].idxmax() #返回最大值 index
+df.loc[df['fs_roe'].idxmin()]</p> <p>df.fs_net_profit.corr(df.volume) #求解相关系数
+df.company_type.unique() #查看不重复的数据
+df_test.dropna(axis= 1) #删除含有 NaN 值的列
+m = data.dropna(axis=0, subset=['toshopid']) # 删除某列为 Nan 的行
+df_test.volume.fillna(method= 'ffill',limit= 1) #限制向前或者向后填充行数</p> <p>tmp = tmp.set_index('order_unix_time') 设置索引</p> <p>group by
+文档 http://pandas.pydata.org/pandas-docs/stable/groupby.html#group-by-split-apply-combine
+grouped = df.groupby('A')
+grouped = df.groupby(['A', 'B'])
+grouped.get_group('bar')
+按照多列分组
+df.groupby(['A', 'B']).get_group(('bar', 'one'))</p> <p>组内排序
+My_Frame['sort_id'] = My_Frame['salary'].groupby(My_Frame['dep_id']).rank(ascending=False)
+注意排序的时候，如果是按照多列分组，多列的写法和上面的不太一样：</p> <p>如果写成 .groupby(samll_shopes['a', 'b']) 则会报错： ValueError: Grouper for '&lt;class 'pandas.core.frame.DataFrame'&gt;' not 1-dimensional</p> <p>df['Data4'] = df['Data3'].groupby(df['Date']).transform('sum')</p> <h3 id="滑动-卷-往后倒-求平均-周平均"><a href="#滑动-卷-往后倒-求平均-周平均" class="header-anchor">#</a> 滑动 卷 往后倒 求平均 周平均</h3> <p>df['A'] = df.rolling(2).mean() 注意，针对的是 index，即 index 每隔两个。由于默认的 index 是从 0 开始的数字，因此和每隔多少行无异
+但是如果 index 是 时间戳这种，就可以按照 '2s' 这种间距
+df.rolling(2, min_periods=1).sum()
+df_re.groupby('A').rolling(4).B.mean() 直接 rolling 会无视索引的区别，但是线分组的话，rolling 也会被限制在索引中
+x.B.xs('a').xs('china')</p> <p>累积
+df_re.groupby('A').expanding().sum()</p> <p>df['new_column'] = pd.Series 这种赋值方式似乎并不是我们想象的那样，例如，当我给一个 df 赋予随机值列的时候，可能因为 df 的 index 不连续，造成好多 NUll 随机数。</p> <p>df_re.groupby('group').resample('1D').ffill()
+resample 等频抽样，D 为天，S 为秒，</p> <h3 id="等频聚合，例如，按周聚合，"><a href="#等频聚合，例如，按周聚合，" class="header-anchor">#</a> 等频聚合，例如，按周聚合，</h3> <p>df['count'].resample('D', how='sum')</p> <p>过滤 sf.groupby(sf).filter(lambda x: x.sum() &gt; 2)</p> <p>df.groupby('g').boxplot()</p> <p>二维表
+pd.crosstab(data[&quot;Credit_History&quot;],data[&quot;Loan_Status&quot;],margins=True)</p> <p>排序
+data_sorted = data.sort_values(['ApplicantIncome','CoapplicantIncome'], ascending=False)</p> <p>箱线图
+data.boxplot(column=&quot;ApplicantIncome&quot;,by=&quot;Loan_Status&quot;)</p> <p>mask 注意==判断时，注意每列的类型，不要混淆 int64 和 string</p> <p>df.xs(index) 按索引选择
+如果列名是中文，则用.号取值会报错，用中括号的方式即可。</p> <p>mask = (x['中国'] &lt;=2 )</p> <p>import pandas as pd
+train = pd.read_csv('train.csv')
+train.shape
+train.head()
+train.columnA.describe()</p> <p>describe(include='all') 描述所有列（默认只数值列）</p> <p>取 dataframe 的一列成为 array
+shop_id = shops.main_poi_id.values</p> <p>日期加上一天
+dapan['partition_date'] + pd.DateOffset(1)</p> <p>日期操作函数
+df.first_cooperate_month.dt.year.value_counts()</p> <p>选择和变换
+mask = (df_tr.hour.values == 11) | (df_tr.hour.values == 17) &amp; (df_tr.day.values == 17)
+注意，.values 取数值， .str 取字符串，
+例如 (df.messgae.str.find('model_e') != -1) 此处 find 用于判断字符串查找，或者也可以用 candi[candi['ids'].str.contains(&quot;2015122&quot;)] 这种方式</p> <p>但是，但是，对于中文，好像又不能用 str 和 unicode 的 u
+例如，tmp = raw_data.loc[raw_data.name == &quot;北京&quot;] 可以，但是 tmp = raw_data.loc[raw_data.name.str == &quot;北京&quot;] 或者 tmp = raw_data.loc[raw_data.name == u&quot;北京&quot;] 都是不对的！！！</p> <p>对于中文列名，如何处理？
+x[x['中国'] &lt;= 2] 这种选择方法当时也是可以的</p> <p>df['gen'] = df['gen'].mask(df['gen'] + df['cont'] &lt; 0.01)</p> <p>df.loc[df['First Season'] &gt; 1990, 'First Season'] = 1
+df['First Season'] = (df['First Season'] &gt; 1990).astype(int)</p> <p>选出数值特征
+numerric_features = train.select_dtypes(includes=[np.number])
+numerric_features.dtypes</p> <p>筛选非数字特征
+categorical = train.select_dtypes(exclude=[np.number])</p> <p>merge
+candi = pd.merge(data, mpoi, left_on=['city', 'geohash_kb'], right_on=['city_name', 'geohash_mt'], how='left')</p> <p>geohash
+import pygeohash as pgh
+def geo_encode(x, n=4, by=1):
+return str(pgh.encode(x[0]/by, x[1]/by,n)) + &quot;--&quot; + x[2]</p> <p>按照是否包含在集合中选取 dataframe 符合条件的数据
+df = data.loc[data.biz_type.isin({200}) ]
+取反 用 ～</p> <p>分组排序
+df.groupby('img')['h'].rank(ascending=False).values</p> <p>类似的，分组最大
+x.r.map(lambda i: x.groupby('r').n.max()[i])</p> <p>分组计数
+x.r.map(lambda i: x.groupby('r').n.count()[i]).values</p> <p>去重前先排序
+df = df.sort_values('lifecycle', ascending=False).drop_duplicates('case_id').sort_index()</p> <p>变量的协方差矩阵
+corr = numerric_features.corr()
+协方差最大最小值查看
+corr[columnA].sort_values(ascending=false)[:5]
+coor[columnA].sort_values(ascending=false)[-5:]</p> <p>去除重复值 去重
+train.columnA.unique()
+drop_duplicates(subset=None, keep='first', inplace=False)</p> <p>数据透视表
+pivot = train.pivot_table(index = 某个分类变量, values=某个数值变量, aggfunc=np.mean)
+pivot = df_tr.pivot_table(index = 'area_id', values='poi_id', aggfunc=lambda x: len(x.dropna().unique()))
+print pivot
+还可以加上 columns</p> <p>多列透视，这个厉害了
+p = df_tr.groupby('area_id').aggregate({'delivery_duration':np.mean, 'poi_id':lambda x: len(x.dropna().unique())})</p> <p>agg 方法将一个函数使用在一个数列上，然后返回一个标量的值。也就是说 agg 每次传入的是一列数据，对其聚合后返回标量。</p> <p>apply 是一个更一般化的方法：将一个数据分拆-应用-汇总。而 apply 会将当前分组后的数据一起传入，可以返回多维数据。</p> <p>data.groupby(['model', 'bu']).size()</p> <p>concat
+pandas.concat(objs, axis=0, join='outer', join_axes=None, ignore_index=False, keys=None, levels=None, names=None, verify_integrity=False, copy=True)[source]¶</p> <p>一列构造多列
+df.textcol.apply(lambda s: pd.Series({'feature1':s+1, 'feature2'😒-1}))</p> <p>时间序列
+日期类型转换
+loandata['issue_d']=pd.to_datetime(loandata['issue_d'])</p> <p>对此透视表，画条形图
+pviot.plot(kind='bar', color='blue')</p> <p>条件筛选
+train = train[train[columnA] &lt; 100]</p> <p>空值
+nulls = pd.dataFrame(train.isnull().sum().sort_values(ascending=false)[:25])
+统计每列的 nan 值 或者 缺失值
+df.isnull().sum()
+缺失值填充
+df['time3_category'] = df['time3_category'].fillna(1)
+df.fillna(df.mean()['a', 'b']) 这种在数据量很大的时候似乎总是很慢不可用
+df[['a', 'b']] = df[['a','b']].fillna(value=0)</p> <p>fill_NaN = Imputer(missing_values=np.nan, strategy='mean', axis=1)
+imputed_DF = pd.DataFrame(fill_NaN.fit_transform(df))
+imputed_DF.columns = df.columns
+imputed_DF.index = df.index</p> <p>理解 axis
+轴用来为超过一维的数组定义的属性，二维数据拥有两个轴：第 0 轴沿着行的垂直往下，第 1 轴沿着列的方向水平延伸。</p> <p>df.mean(axis=1) 计算的是每一行的均值
+df.drop(&quot;col4&quot;, axis=1) 删除的却是这一列的每一行</p> <p>null 缺失值
+xtrain = df.loc[df['Survive'].notnull(), ['Age','Fare', 'Group_Size','deck', 'Pclass', 'Title' ]]
+xtrain</p> <p>SettingWithCop</p> <blockquote><p>A value is trying to be set on a copy of a slice from a DataFrame</p></blockquote> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> pandas <span class="token keyword">import</span> <span class="token operator">*</span>
+df <span class="token operator">=</span> DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&quot;A&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&quot;B&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">3.125</span><span class="token punctuation">,</span> <span class="token number">4.12</span><span class="token punctuation">,</span> <span class="token number">3.1</span><span class="token punctuation">,</span> <span class="token number">6.2</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+row <span class="token operator">=</span> df<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+row<span class="token punctuation">[</span><span class="token string">&quot;A&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+</code></pre></div><p>上面这段代码就会爆错： A value is trying to be set on a copy of a slice from a DataFrame</p> <p>aggregate 聚合之后，如何重命名聚合列的名称呢？
+df = data.groupby('Seed').agg(
+{'age':['sum'],
+'height':['mean', 'std']})
+df.columns = [&quot;_&quot;.join(x) for x in df.columns.ravel()]
+但是如果聚合函数是 lambda 函数呢？</p> <p>df['new_column'] = np.multiply(df['A'], df['B'])</p> <p>设置列名称
+null.columns = ['name1']
+设置行索引名称
+null.index.name = 'name2'</p> <p>分类变量的值和频次
+y = train.columnA.value_counts()
+len(y[y&gt;1].unique()) 过滤频次
+y = tmp.kb_id.value_counts()
+y 这样就能打印出现次数 top 的了，默认排序，很好</p> <p>value_counts()得到的是 series (with index)， series 转 dataframe:
+data.day.value_counts().to_frame()</p> <p>或者，分组后统计频次，并排序
+f = df[['STNAME','CTYNAME']].groupby(['STNAME'])['CTYNAME'] <br>
+.count() <br>
+.reset_index(name='count') <br>
+.sort_values(['count'], ascending=False) <br>
+.head(5)</p> <p>哑变量 ont-hot 编码 注意，训练集和测试集要编码一致
+train['a_encode'] = pd.get_dummies(train.columnA, drop_first=true)
+test['a_encode'] = pd.get_dummies(train.columnA, drop_first=true)</p> <p>Apply 方法
+train.columnA.apply(func)</p> <p>插补缺失值
+data = train.select_dtypes(include=[np.number]).interpolate().dropna()</p> <p>去除列
+data.drop(['featureA'], axis=1)</p> <p>创建 dataFrame
+df = pd.dataFrame()
+df['id'] = train.id</p> <p>dataFrame 转化为 csv
+df.to_csv('a.csv', index=False)
+d.to_csv('/Users/zhangxisheng/Downloads/big_meal_single_poi.csv', index=False, encoding='utf-8') 有时候有编码问题的时候，加上 encoding 能够解决
+存下来的文件，excel 读入之后为乱码的解决方案：encoding='utf_8_sig'</p> <p>一个 to_csv 的疑难杂症：
+我的 df 只有一列，类型为字符串，当我用 to_csv 存储下来之后，发现有些行被加上了双引号，有些则没有。
+最后在轩哥的帮助下定位到原因： 这些加上了双引号的行，都是因为本身带有都好；解决办法就是，指明 sep=&quot;\t&quot;，这样就行了。</p> <p>obj.combine_first(other)
+如果 obj 中有为 null 的值，用对应索引的 other 中的数据填充</p> <p>某一列为 nan 的行
+df = df[np.isfinite(df['EPS'])]</p> <p>索引
+agg.index.values</p> <p>列与索引之间可以相互转化
+df.set_index('date', inplace=True)
+x['index'] = x.index.get_level_values('C')
+df.reset_index(inplace=True, drop=False) 对多重索引，将会把每个索引变为列，新加索引为从 0 开始的自然数，非常赞</p> <p>层次化索引
+所谓层次化索引，其实也是多重索引，只不过有些相同的被省略了。
+data.unstack() 可以打平层次化索引中的部分索引，即变宽表</p> <p>多重索引
+m_idx = pd.MultiIndex.from_tuples(zip(dates, labels), names=['date', 'label'])
+data_dict = {'observation1':obs1, 'observation2':obs2}
+df = pd.DataFrame(data_dict, index=m_idx)
+参见 http://www.jianshu.com/p/3ab1554fe6f3</p> <p>类型转换
+df_ta['delivery_duration'] = df_ta['delivery_duration'].astype('float')</p> <p>斜度
+train.columnA.skew()</p> <p>交叉表 cross table
+pd.crosstab(df.E,df.group)</p> <p>标签编码
+lbe = LabelEncoder()
+lbe.fit(df_tr['area_id'].values.reshape(-1, 1))
+df_ta['area_id_le'] = lbe.transform(df_ta['area_id'].values.reshape(-1, 1))</p> <p>宽表变窄表
+df = pd.melt(df, id_vars=[&quot;date&quot;], var_name=&quot;condition&quot;)</p> <p>窄表边宽表
+partition_date bu n_poi
+0 2018-04-01 交易销售部 67719
+1 2018-04-01 渠道发展部 16774
+2 2018-04-01 电销及平台支持部 15683
+3 2018-04-02 交易销售部 67526
+4 2018-04-02 渠道发展部 16757
+5 2018-04-02 电销及平台支持部 15393
+6 2018-04-03 交易销售部 67154
+7 2018-04-03 渠道发展部 16871
+8 2018-04-03 电销及平台支持部 15333
+11 2018-04-04 电销及平台支持部 15938</p> <p>如何转成下面这种表？
+日期 交易 渠道 电销
+20180401 67719 16774 15683</p> <p>因为只有下面这种宽表，才能画堆叠的直方图。
+一种办法是在 sql 里，聚合一下分别统计成三列就好，这是简单的。
+第二种就是： 聚合。
+data[['prob', 'model_tag', 'user_id']].pivot_table(values='prob', columns='model_tag', index=['user_id'])</p> <h4 id="loc-assign-的用"><a href="#loc-assign-的用" class="header-anchor">#</a> loc assign 的用</h4> <p>data.loc[data.penalty_end_day.isnull()]['punished'] = 0 这种不行的
+正确的写法： data.loc[data.penalty_end_day.isnull(), ['punished']] = 0</p> <p>cut 切分和分组
+bins = [0, 5, 10, 15, 20]
+group_names = ['A', 'B', 'C', 'D']
+loandata['categories'] = pd.cut(loandata['open_acc'], bins, labels=group_names)</p> <p>df['bin'] = pd.cut(df.discount, bins = [0,0.5, 0.7,0.9,1], labels=['low', 'middle', 'normal','high'])
+df.groupby('bin').aggregate({'label': np.sum}).plot(kind='bar')</p> <p>bins = pd.cut(df['Value'], [0, 100, 250, 1500])
+df.groupby(bins)['Value'].agg(['count', 'sum'])</p> <p>cut 和 qcut 的区别
+pd.qcut(factors, 5).value_counts()
+pd.cut(factors, 5).value_counts()</p> <p>qcuts 一般会保证每个 bin 中的个数是一样的，而 cut 不会考虑频次，只是平均分值。</p> <p>分列
+grade_split = pd.DataFrame((x.split('-') for x in loandata.grade),
+index=loandata.index,columns=['grade','sub_grade'])</p> <p>df.info(memory_usage='deep') 该表的精确内存使用量，行列个数，以及对应的数据类型个数
+在底层，pandas 会按照 数据类型 将 列 分组形成数据块（blocks）
+对于包含数值型数据（比如整型和浮点型）的数据块，pandas 会合并这些列，并把它们存储为一个 Numpy 数组（ndarray）。
+Numpy 数组是在 C 数组的基础上创建的，其值在内存中是连续存储的。基于这种存储机制，对其切片的访问是相当快的。</p> <p>看每种类型的块所占内存
+for dtype in ['float', 'int', 'object']:
+selected = df.select_dtypes(include=[dtype])
+mean_useage = selected.memory_usage(deep=true).mean()
+mean_useage = mean_useage/1024**2</p> <p>pandas 中的许多数据类型具有多个子类型，它们可以使用较少的字节去表示不同数据，比如，
+float 型就有 float16、float32 和 float64 这些子类型</p> <p>参考 用 pandas 处理大数据——节省 90%内存消耗的小贴士
+https://mp.weixin.qq.com/s?__biz=MzAxNTc0Mjg0Mg==&amp;mid=2653286198&amp;idx=1&amp;sn=f8f0ea4845586b1f9b645995aa07d8a0&amp;open_source=weibo_search</p> <p>simhash
+import re
+from simhash import Simhash
+def get_features(s):
+width = 3
+s = s.lower()
+s = re.sub(r'[^\w]+', '', s)
+return [s[i:i + width] for i in range(max(len(s) - width + 1, 1))]</p> <p>print '%x' % Simhash(get_features('How are you? I am fine. Thanks.')).value
+print '%x' % Simhash(get_features('How are u? I am fine. Thanks.')).value
+print '%x' % Simhash(get_features('How r you?I am fine. Thanks.')).value</p> <p>print Simhash('aa').distance(Simhash('bb'))
+print Simhash('aa').distance(Simhash('aa'))</p> <p>5.主成分分析</p> <p>主成分分析是由因子分析进化而来的一种降维的方法。</p> <p>通过正交变换将原始特征转换为线性独立的特征，转换后得到的特征被称为主成分。主成分分析可以将原始维度降维到 n 个维度。</p> <p>有一个特例情况，就是通过主成分分析将维度降低为 2 维，可以将多维数据转换为平面中的点，来达到多维数据可视化的目的。</p> <p>from sklearn import decomposition</p> <p>pca = decomposition.PCA(n_components=2)</p> <p>X = pca.fit_transform(data.ix[:,:-1].values)</p> <p>pos=pd.DataFrame()</p> <p>pos['X'] =X[:, 0]</p> <p>pos['Y'] =X[:, 1]</p> <p>pos['species'] = data['species']</p> <p>ax = pos.ix[pos['species']=='virginica'].</p> <p>plot(kind='scatter', x='X', y='Y', color='blue', label='virginica')</p> <p>ax = pos.ix[pos['species']=='setosa'].</p> <p>plot(kind='scatter', x='X', y='Y', color='green', label='setosa', ax=ax)</p> <p>pos.ix[pos['species']=='versicolor'].</p> <p>plot(kind='scatter', x='X', y='Y', color='red', label='versicolor', ax=ax</p> <p>需要注意，通过 PCA 降维实际上是损失了一些信息，我们也可以看一下保留的两个主成分可以解释原始数据的多少。</p> <p>6.独立成分分析</p> <p>独立成分分析将多源信号拆分成较大可能独立性的子成分，它最初不是用来降维，而是用于拆分重叠的信号。</p> <p>from sklearn import decomposition</p> <p>pca = decomposition.FastICA(n_components=2)</p> <p>X = pca.fit_transform(data.ix[:,:-1].values)</p> <p>pos=pd.DataFrame()</p> <p>pos['X'] =X[:, 0]</p> <p>pos['Y'] =X[:, 1]</p> <p>pos['species'] = data['species']</p> <p>ax = pos.ix[pos['species']=='virginica'].</p> <p>plot(kind='scatter', x='X', y='Y', color='blue', label='virginica')</p> <p>ax = pos.ix[pos['species']=='setosa'].</p> <p>plot(kind='scatter', x='X', y='Y', color='green', label='setosa', ax=ax)</p> <p>pos.ix[pos['species']=='versicolor'].</p> <p>plot(kind='scatter', x='X', y='Y', color='red', label='versicolor', ax=ax)</p> <p>Out[42]:</p> <p>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f47f274af28&gt;</p> <p>7.多维尺度分析</p> <p>多维尺度分析试图寻找原始高维空间数据的距离的良好低维表征。</p> <p>简单来说，多维尺度分析被用于数据的相似性，它试图用几何空间中的距离来建模数据的相似性，即用二维空间中的距离来表示高维空间的关系。</p> <p>数据可以是物体之间的相似度、分子之间的交互频率或国家间交易指数，而且是基于欧式距离的距离矩阵。</p> <p>多维尺度分析算法是一个不断迭代的过程，因此，需要使用 max_iter 来指定较大迭代次数，同时计算的耗时也是上面算法中较大的一个。</p> <p>from sklearn import manifold</p> <p>from sklearn.metrics import euclidean_distances</p> <p>similarities = euclidean_distances(data.ix[:,:-1].values)</p> <p>mds = manifold.MDS(n_components=2, max_iter=3000, eps=1e-9, dissimilarity=&quot;precomputed&quot;,</p> <p>n_jobs=1)</p> <p>X = mds.fit(similarities).embedding_</p> <p>pos=pd.DataFrame(X, columns=['X', 'Y'])</p> <p>pos['species'] = data['species']</p> <p>ax = pos.ix[pos['species']=='virginica'].</p> <p>plot(kind='scatter', x='X', y='Y', color='blue', label='virginica')</p> <p>ax = pos.ix[pos['species']=='setosa'].</p> <p>plot(kind='scatter', x='X', y='Y', color='green', label='setosa', ax=ax)</p> <p>pos.ix[pos['species']=='versicolor'].</p> <p>plot(kind='scatter', x='X', y='Y', color='red', label='versicolor', ax=ax)</p> <p>=============================== 正则匹配统计
+import re</p> <p>pattern = re.compile(r'(.<em>)_ck(.</em>)_(.*)')
+cks = {}</p> <p>with open(&quot;hyclicktags.csv&quot;, &quot;r&quot;) as f:
+for line in f:
+tmp = int(line.split(&quot;,&quot;)[1])
+match = pattern.match(line)
+if match:
+if match.group(2) in cks:
+c = cks.get(match.group(2))
+cks[match.group(2)] = c + tmp
+else:
+cks[match.group(2)] = tmp</p> <p>count = len(cks)
+print count</p> <p>if count &lt;= 200:
+for i in cks:
+print i, cks[i]</p> <p>带有中文的正则
+import re</p> <p>pattern = re.compile(ur'([道|路]+)([0-9]+)号')
+line = u&quot;清华道 2 号&quot;
+match = pattern.match(line)</p> <p>if match:
+print match.group(0)
+print match.group(3)</p> <p>print pattern.search(line).group()</p> <p>正则替换
+例如，替换括号中的内容
+import re
+str = '多摩君 1（英文版）c(ab)(34) '
+out = re.sub('（.<em>?）|(.</em>?)', '', str)
+print out</p> <p>import re
+str = '多摩君一区 '.decode('utf8')
+out = re.sub(u&quot;[一区]|[二区]&quot;, '', str)
+print out</p> <h3 id="推荐这种方式"><a href="#推荐这种方式" class="header-anchor">#</a> 推荐这种方式</h3> <p>import re
+def remove_district(x):
+return re.sub(u&quot;[一区]|[二区]&quot;, '', x).encode('utf8')
+print remove_district(u'武汉一区')
+该函数可以直接用在 df 的列变换中</p> <p>执行字符串语句
+x = eval(&quot;2+2&quot;)</p> <p>加载模块的另一种方式</p> <p>file, path_name, description = imp.find_module('env', [dir])</p> <h1 id="这一步就是导入-env-这个模块，让-b-成为-a-类的别名"><a href="#这一步就是导入-env-这个模块，让-b-成为-a-类的别名" class="header-anchor">#</a> 这一步就是导入 env 这个模块，让 B 成为 A 类的别名</h1> <p>B = imp.load_module('env', file,path_name, description).A</p> <p>最频繁元素
+from collections import Counter</p> <p>def Most_Common(lst):
+data = Counter(lst)
+return data.most_common(1)[0][0]</p> <p>在 python 中，True == 1, False == 0， 因此，在列表中是可以用 True/False 做下标取值的，例如：
+[exponential(12), exponential(2)][uniform() &lt; 0.5] 相当于每次随机取一种分布的随机数</p> <h2 id="numpy"><a href="#numpy" class="header-anchor">#</a> numpy</h2> <p>numpy 101 题 https://www.machinelearningplus.com/101-numpy-exercises-python/</p> <p>去重的时候顺便统计频次
+(values,counts) = np.unique(p,return_counts=True)
+ind=np.argmax(counts)
+print values[ind], counts[ind]</p> <p>import numpy as np
+np.log() 对序列做对数变换
+np.exp()</p> <p>每行的和
+df['Col_sum'] = df.apply(lambda x: x.sum(), axis=1)
+注意： 对 series ， apply 的方法，不能写 axis=1</p> <p>每列的和
+df.loc['Row_sum'] = df.apply(lambda x: x.sum())</p> <p>快速拼接两列
+df[&quot;dh&quot;] = df[&quot;partition_date&quot;].map(str) + '-'+ df[&quot;hour&quot;].map(str)</p> <p>替换
+arr[arr % 2 == 1] = -1</p> <p>where 筛选
+x = np.where(arr % 2 == 1, -1, arr)</p> <p>重复
+b = np.repeat(1, 10).reshape(2,-1)</p> <p>np.r_[np.repeat(a, 3), np.tile(a, 3)]</p> <p>公共元素
+np.intersect1d(a,b)</p> <h1 id="from-a-remove-all-of-b"><a href="#from-a-remove-all-of-b" class="header-anchor">#</a> From 'a' remove all of 'b'</h1> <p>np.setdiff1d(a,b)</p> <p>np.where(a == b)</p> <p>index = np.where((a &gt;= 5) &amp; (a &lt;= 10))
+a[index]</p> <p>标量函数向量化
+pair_max = np.vectorize(maxx, otypes=[float])</p> <p>boolean to int
+y_pred = (y_pred &gt;= 0.5)*1</p> <h1 id="scikit-learn"><a href="#scikit-learn" class="header-anchor">#</a> scikit-learn</h1> <p>from sklearn.model_selection import train_test_split</p> <p>x_train, x_test, y_train, y_test = train_test_split(x,y, random_state=42, test_size = 0.33)</p> <p>线性模型
+from sklearn import linear_model
+lr = linear_model.LinearRegression()</p> <p>训练模型
+model = lr.fit(x_train,y_train)</p> <p>model.score() 返回被模型解释的方差的占比（即 R 方）</p> <p>模型预测
+predicts = model.predict(x_test)</p> <p>模型评估/评测
+from sklearn.metrics import mean_squared_error
+mean_squared_error(y_test, predicts)</p> <p>岭回归
+ridge = linear_model.Ridge(alpha=0.5)</p> <p>ridge_model = ridge.fit(x_train, y_train)</p> <p>one hot 编码
+单列 OneHotEncoder(sparse = False).fit_transform( testdata[['age']] )
+多列 OneHotEncoder(sparse = False).fit_transform( testdata['age', 'salary'])
+OneHotEncoder 不能对字符串型的值做处理, 因此需先用 LabelEncoder 对离散特征编码</p> <p>LabelBinarizer().fit_transform(testdata['pet'])</p> <p>==================== csv 文件处理</p> <p>import pandas as pd</p> <p>from datetime import datetime</p> <p>data_location = &quot;/Users/zhangxisheng/Documents/projects/商家不接待项目/refuse_samples.csv&quot;</p> <p>df = pd.read_csv(data_location, sep=',', header=0)</p> <p>def str2date(date_str, formats=&quot;%Y-%m-%d %H:%M:%S&quot;):
+return datetime.strptime(date_str, formats).date()</p> <p>dt.weekday() 返回一周的第几天，注意，周一是 0</p> <p>df[&quot;C&quot;] = &quot;&quot; 空列</p> <p>df['date'] = df['date'].map(lambda x: str2date(x))</p> <p>print df.shape</p> <p>print df.head(10)
+print df['date'][:3]</p> <p>print df['date'].value_counts()</p> <p>聚合
+print pd.pivot_table(df, values='fea#1', index=['fea#5'], columns='label', aggfunc=len).reset_index()</p> <p>多列转一列 由多列合成一列
+df['Value'] = df.apply(lambda row: my_test(row['a'], row['c']), axis=1)</p> <p>列求和
+small.sales.sum()</p> <p>shuffle 混洗
+from sklearn.utils import shuffle
+df = shuffle(df)</p> <p>划分的时候不要混洗
+train_test_split(y, shuffle=False)</p> <h3 id="sklern"><a href="#sklern" class="header-anchor">#</a> ============= sklern</h3> <p>有时候将 dataFrame 用 df.values 转为 ndarray 进行训练的时候，爆出如下错误
+Input contains NaN, infinity or a value too large for dtype('float32')</p> <p>可以如下检查
+if np.any(np.isnan(train_feat)):
+print &quot;存在含有 null 值 的列&quot;</p> <div class="language- extra-class"><pre><code>    if np.all(np.isfinite(mat)):
+        print &quot;存在非有限值的列&quot;
+</code></pre></div><p>单列作为 ndarray， 要重塑
+df.col.values.reshape(-1,1)</p> <p>排序 pair，指定排序 key
+<code>sorted(model_bst.get_fscore().items(), key=lambda x: x[1], reverse=True)</code></p> <p>救急、自省
+查看包路径
+from distutils.sysconfig import get_python_lib
+print(get_python_lib())</p> <p>列出 object 及其内存
+import sys
+ipython<em>vars = ['In', 'Out', 'exit', 'quit', 'get_ipython', 'ipython_vars']
+sorted([(x, sys.getsizeof(globals().get(x))) for x in dir() if not x.startswith('</em>') and x not in sys.modules and x not in ipython_vars], key=lambda x: x[1], reverse=True)</p> <p>data.faq.str.startswith('联系', na=False)</p> <p>按重复次数过滤
+data.groupby('case_id').filter(lambda x: len(x) &gt;= 2)</p> <p>np.meshgrid
+https://stackoverflow.com/questions/36013063/what-is-purpose-of-meshgrid-in-python-numpy 看了这个解释你还不知道这个函数是干啥的你打我！</p> <p>从 url 读取图片</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">detect_and_draw</span><span class="token punctuation">(</span>img_url<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    url <span class="token operator">=</span> <span class="token string">&quot;http://10.20.42.6:8415/TextDetect&quot;</span>
+    r <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token punctuation">,</span> data<span class="token operator">=</span>img_url<span class="token punctuation">,</span> headers<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    result <span class="token operator">=</span> r<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'text'</span><span class="token punctuation">]</span>
+
+
+<span class="token comment">#     img = Image.open(StringIO(urllib.urlopen(img_url).read()))</span>
+    img_file <span class="token operator">=</span> cStringIO<span class="token punctuation">.</span>StringIO<span class="token punctuation">(</span>urllib<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span>img_url<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    img <span class="token operator">=</span> Image<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>img_file<span class="token punctuation">)</span>
+
+    img_data <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>img<span class="token punctuation">,</span> dtype<span class="token operator">=</span>np<span class="token punctuation">.</span>uint8<span class="token punctuation">)</span>
+
+    fig<span class="token punctuation">,</span>ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    ax<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>img_data<span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span> <span class="token string">&quot;%d boxs detected&quot;</span> <span class="token operator">%</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'text'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> r<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'text'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+        x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">[</span><span class="token string">'x0'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        y <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">[</span><span class="token string">'y0'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        w <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">[</span><span class="token string">'x1'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">[</span><span class="token string">'x0'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        h <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">[</span><span class="token string">'y1'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token builtin">int</span><span class="token punctuation">(</span>i<span class="token punctuation">[</span><span class="token string">'y0'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        rect <span class="token operator">=</span> patches<span class="token punctuation">.</span>Rectangle<span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">,</span>w<span class="token punctuation">,</span>h<span class="token punctuation">,</span>linewidth<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">,</span>facecolor<span class="token operator">=</span><span class="token string">'none'</span><span class="token punctuation">)</span>
+        ax<span class="token punctuation">.</span>add_patch<span class="token punctuation">(</span>rect<span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>假设检验</p> <p>from scipy.stats import binom_test
+binom_test(2, 8, 11/2364, alternative='greater')</p> <h1 id="动画"><a href="#动画" class="header-anchor">#</a> 动画</h1> <div class="language-python extra-class"><pre class="language-python"><code>
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> animation
+
+fig <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>set_dpi<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>set_size_inches<span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">6.5</span><span class="token punctuation">)</span>
+
+ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>axes<span class="token punctuation">(</span>xlim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ylim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+patch <span class="token operator">=</span> plt<span class="token punctuation">.</span>Circle<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">0.75</span><span class="token punctuation">,</span> fc<span class="token operator">=</span><span class="token string">'y'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    patch<span class="token punctuation">.</span>center <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
+    ax<span class="token punctuation">.</span>add_patch<span class="token punctuation">(</span>patch<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> patch<span class="token punctuation">,</span>
+
+<span class="token keyword">def</span> <span class="token function">animate</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    x<span class="token punctuation">,</span> y <span class="token operator">=</span> patch<span class="token punctuation">.</span>center
+    x <span class="token operator">=</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>np<span class="token punctuation">.</span>radians<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    y <span class="token operator">=</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>np<span class="token punctuation">.</span>radians<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    patch<span class="token punctuation">.</span>center <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> patch<span class="token punctuation">,</span>
+
+anim <span class="token operator">=</span> animation<span class="token punctuation">.</span>FuncAnimation<span class="token punctuation">(</span>fig<span class="token punctuation">,</span> animate<span class="token punctuation">,</span>
+                               init_func<span class="token operator">=</span>init<span class="token punctuation">,</span>
+                               frames<span class="token operator">=</span><span class="token number">360</span><span class="token punctuation">,</span>
+                               interval<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span>
+                               blit<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 如果要在 jupyter notebook 中显示，则改为 `HTML(anim.to_jshtml())` 即可；不过，在 jupyter notebook 中显示动效真的很慢！</span>
+</code></pre></div><p>动画甚至可以保存为 mp4 动画</p> <div class="language-python extra-class"><pre class="language-python"><code>anim<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'/Users/zhangxisheng/Downloads/animation.mp4'</span><span class="token punctuation">,</span> fps<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">,</span>
+          extra_args<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'-vcodec'</span><span class="token punctuation">,</span> <span class="token string">'h264'</span><span class="token punctuation">,</span>
+                      <span class="token string">'-pix_fmt'</span><span class="token punctuation">,</span> <span class="token string">'yuv420p'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h1 id="输入框"><a href="#输入框" class="header-anchor">#</a> 输入框</h1> <div class="language-python extra-class"><pre class="language-python"><code>
+<span class="token keyword">from</span> Tkinter <span class="token keyword">import</span> <span class="token operator">*</span>
+
+<span class="token keyword">def</span> <span class="token function">printData</span><span class="token punctuation">(</span>firstName<span class="token punctuation">,</span> lastName<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>firstName<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>lastName<span class="token punctuation">)</span>
+    root<span class="token punctuation">.</span>destroy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">get_input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    firstName <span class="token operator">=</span> entry1<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    lastName <span class="token operator">=</span> entry2<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    printData<span class="token punctuation">(</span>firstName<span class="token punctuation">,</span> lastName<span class="token punctuation">)</span>
+
+
+root <span class="token operator">=</span> Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#Label 1</span>
+label1 <span class="token operator">=</span> Label<span class="token punctuation">(</span>root<span class="token punctuation">,</span>text <span class="token operator">=</span> <span class="token string">'First Name'</span><span class="token punctuation">)</span>
+label1<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+label1<span class="token punctuation">.</span>config<span class="token punctuation">(</span>justify <span class="token operator">=</span> CENTER<span class="token punctuation">)</span>
+
+entry1 <span class="token operator">=</span> Entry<span class="token punctuation">(</span>root<span class="token punctuation">,</span> width <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">)</span>
+entry1<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+label3 <span class="token operator">=</span> Label<span class="token punctuation">(</span>root<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">&quot;Last Name&quot;</span><span class="token punctuation">)</span>
+label3<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+label1<span class="token punctuation">.</span>config<span class="token punctuation">(</span>justify <span class="token operator">=</span> CENTER<span class="token punctuation">)</span>
+
+entry2 <span class="token operator">=</span> Entry<span class="token punctuation">(</span>root<span class="token punctuation">,</span> width <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">)</span>
+entry2<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+button1 <span class="token operator">=</span> Button<span class="token punctuation">(</span>root<span class="token punctuation">,</span> text <span class="token operator">=</span> <span class="token string">'submit'</span><span class="token punctuation">)</span>
+button1<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+button1<span class="token punctuation">.</span>config<span class="token punctuation">(</span>command <span class="token operator">=</span> get_input<span class="token punctuation">)</span>
+
+root<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>关于 tkinter</p> <p>pack(side=TOP) 从上往下排列，而 side=LEFT 是从左往右排列</p> <p>单选和复选框</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> tkinter <span class="token keyword">import</span> <span class="token operator">*</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Radiobar</span><span class="token punctuation">(</span>Frame<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> parent<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> picks<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> side<span class="token operator">=</span>TOP<span class="token punctuation">,</span> anchor<span class="token operator">=</span>W<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       Frame<span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>self<span class="token punctuation">,</span> parent<span class="token punctuation">)</span>
+       var <span class="token operator">=</span> IntVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+       self<span class="token punctuation">.</span>var <span class="token operator">=</span> var
+       i <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>
+       <span class="token keyword">for</span> pick <span class="token keyword">in</span> picks<span class="token punctuation">:</span>
+        i <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span>
+        chk <span class="token operator">=</span> Radiobutton<span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token operator">=</span>pick<span class="token punctuation">,</span> variable<span class="token operator">=</span>var<span class="token punctuation">,</span> value <span class="token operator">=</span> i<span class="token punctuation">)</span>
+        chk<span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span>side<span class="token punctuation">,</span> anchor<span class="token operator">=</span>anchor<span class="token punctuation">,</span> expand<span class="token operator">=</span>YES<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">state</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> self<span class="token punctuation">.</span>var<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Checkbar</span><span class="token punctuation">(</span>Frame<span class="token punctuation">)</span><span class="token punctuation">:</span>
+   <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> parent<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> picks<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> side<span class="token operator">=</span>LEFT<span class="token punctuation">,</span> anchor<span class="token operator">=</span>W<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      Frame<span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>self<span class="token punctuation">,</span> parent<span class="token punctuation">)</span>
+      self<span class="token punctuation">.</span><span class="token builtin">vars</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token keyword">for</span> pick <span class="token keyword">in</span> picks<span class="token punctuation">:</span>
+         var <span class="token operator">=</span> IntVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+         chk <span class="token operator">=</span> Checkbutton<span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token operator">=</span>pick<span class="token punctuation">,</span> variable<span class="token operator">=</span>var<span class="token punctuation">)</span>
+         chk<span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span>side<span class="token punctuation">,</span> anchor<span class="token operator">=</span>anchor<span class="token punctuation">,</span> expand<span class="token operator">=</span>YES<span class="token punctuation">)</span>
+         self<span class="token punctuation">.</span><span class="token builtin">vars</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>var<span class="token punctuation">)</span>
+   <span class="token keyword">def</span> <span class="token function">state</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> var<span class="token punctuation">:</span> var<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span><span class="token builtin">vars</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+   root <span class="token operator">=</span> Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token comment"># lng = Checkbar(root, ['Python', 'Ruby', 'Perl', 'C++'],side=TOP)</span>
+   <span class="token comment"># lng.pack(side=TOP,  fill=X)</span>
+   <span class="token comment"># lng.config(relief=GROOVE, bd=2)</span>
+   labels <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">u'类别'</span><span class="token punctuation">,</span> <span class="token string">u'菜名和价格'</span><span class="token punctuation">,</span> <span class="token string">u'菜名'</span><span class="token punctuation">,</span> <span class="token string">u'价格'</span><span class="token punctuation">,</span> <span class="token string">u'标题'</span><span class="token punctuation">,</span> <span class="token string">u'标签'</span><span class="token punctuation">,</span> <span class="token string">u'规格'</span><span class="token punctuation">,</span> <span class="token string">u'其他文字'</span><span class="token punctuation">,</span> <span class="token string">u'非文字'</span><span class="token punctuation">]</span>
+   lng <span class="token operator">=</span> Radiobar<span class="token punctuation">(</span>root<span class="token punctuation">,</span> picks <span class="token operator">=</span> labels<span class="token punctuation">)</span>
+   lng<span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span>TOP<span class="token punctuation">,</span>  fill<span class="token operator">=</span>X<span class="token punctuation">)</span>
+   lng<span class="token punctuation">.</span>config<span class="token punctuation">(</span>relief<span class="token operator">=</span>GROOVE<span class="token punctuation">,</span> bd<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+   <span class="token keyword">def</span> <span class="token function">allstates</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">print</span><span class="token punctuation">(</span>labels<span class="token punctuation">[</span>lng<span class="token punctuation">.</span>state<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+   Button<span class="token punctuation">(</span>root<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Quit'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>root<span class="token punctuation">.</span>quit<span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span>RIGHT<span class="token punctuation">)</span>
+   Button<span class="token punctuation">(</span>root<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Peek'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>allstates<span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span>RIGHT<span class="token punctuation">)</span>
+   root<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token keyword">print</span> <span class="token string">&quot;down&quot;</span>
+
+</code></pre></div><p>图像可以只用用 Image.open 读取； 如果要用 cve.read, 注意要转换 rgb 分量</p> <h1 id=""><a href="#" class="header-anchor">#</a> ======================================================</h1> <p>最地道的 python
+<code>def ecode(x): return 1 if x == 'a' else 0</code></p> <p>python3 中合并字典的方式</p> <div class="language-python extra-class"><pre class="language-python"><code>x <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'1'</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">}</span>
+y <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'6'</span><span class="token punctuation">:</span><span class="token number">6</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token operator">**</span>x<span class="token punctuation">,</span> <span class="token operator">**</span>y<span class="token punctuation">}</span>
+<span class="token comment"># {'1': 4, '6': 6}</span>
+</code></pre></div><p>字符串倒序
+x = &quot;abcd&quot;
+x[::-1]</p> <p>出现次数最多的元素</p> <div class="language-python extra-class"><pre class="language-python"><code>t <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token builtin">max</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">,</span> key <span class="token operator">=</span> test<span class="token punctuation">.</span>count<span class="token punctuation">)</span>
+</code></pre></div><p>多个条件判断</p> <p>math,English,computer =90,59,88
+if any([math&lt;60,English&lt;60,computer&lt;60]):
+print('not pass')</p> <h1 id="通过程序，执行-shell-命令"><a href="#通过程序，执行-shell-命令" class="header-anchor">#</a> 通过程序，执行 shell 命令</h1> <p>from subprocess import check_output
+print(check_output([&quot;ls&quot;, &quot;..&quot;]).decode(&quot;utf8&quot;))</p> <p>dataframe 通过旧列为新列赋值的方法
+dataset['IsAlone'].loc[dataset['FamilySize'] &gt; 1] = 0</p> <p>&quot;v{:04d}&quot;.format(x)
+四位数字，不足的用 0 补全，格式化</p> <p>利用装饰器实现统计函数运行时间注解</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> time
+<span class="token keyword">def</span> <span class="token function">timer</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    job_name <span class="token operator">=</span> fn<span class="token punctuation">.</span>__name__
+    <span class="token keyword">def</span> <span class="token function">new_fn</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        t1 <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'job:'</span> <span class="token operator">+</span> job_name <span class="token operator">+</span> <span class="token string">' start'</span><span class="token punctuation">)</span>
+        result <span class="token operator">=</span> fn<span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span>
+        t2 <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'job:'</span> <span class="token operator">+</span> job_name <span class="token operator">+</span> <span class="token string">' end, it costs '</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>t2 <span class="token operator">-</span> t1<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">' s'</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> result
+    <span class="token keyword">return</span> new_fn
+
+<span class="token decorator annotation punctuation">@timer</span>
+<span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> x<span class="token operator">+</span><span class="token number">1</span>
+
+</code></pre></div><p>pandas 性能提升</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> dask<span class="token punctuation">.</span>dataframe <span class="token keyword">as</span> dd
+<span class="token keyword">from</span> dask<span class="token punctuation">.</span>multiprocessing <span class="token keyword">import</span> get
+
+
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+data<span class="token punctuation">[</span><span class="token string">'col1'</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span>size <span class="token operator">=</span> <span class="token number">1500000</span><span class="token punctuation">)</span>
+data<span class="token punctuation">[</span><span class="token string">'col2'</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span>size <span class="token operator">=</span> <span class="token number">1500000</span><span class="token punctuation">)</span>
+
+ddata <span class="token operator">=</span> dd<span class="token punctuation">.</span>from_pandas<span class="token punctuation">(</span>data<span class="token punctuation">,</span> npartitions<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">)</span>
+
+<span class="token keyword">import</span> timeit
+
+
+<span class="token keyword">def</span> <span class="token function">myfunc</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> y<span class="token operator">*</span><span class="token punctuation">(</span>x<span class="token operator">**</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">apply_myfunc_to_DF</span><span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> df<span class="token punctuation">.</span><span class="token builtin">apply</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> row<span class="token punctuation">:</span> myfunc<span class="token punctuation">(</span><span class="token operator">*</span>row<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">pandas_apply</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> apply_myfunc_to_DF<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">dask_apply</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> ddata<span class="token punctuation">.</span>map_partitions<span class="token punctuation">(</span>apply_myfunc_to_DF<span class="token punctuation">)</span><span class="token punctuation">.</span>compute<span class="token punctuation">(</span>get<span class="token operator">=</span>get<span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">vectorized</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> myfunc<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'col1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'col2'</span><span class="token punctuation">]</span>  <span class="token punctuation">)</span>
+
+t_pds <span class="token operator">=</span> timeit<span class="token punctuation">.</span>Timer<span class="token punctuation">(</span><span class="token keyword">lambda</span><span class="token punctuation">:</span> pandas_apply<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>t_pds<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span>number<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 52.0947</span>
+
+t_dsk <span class="token operator">=</span> timeit<span class="token punctuation">.</span>Timer<span class="token punctuation">(</span><span class="token keyword">lambda</span><span class="token punctuation">:</span> dask_apply<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>t_dsk<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span>number<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">#19.0225</span>
+
+t_vec <span class="token operator">=</span> timeit<span class="token punctuation">.</span>Timer<span class="token punctuation">(</span><span class="token keyword">lambda</span><span class="token punctuation">:</span> vectorized<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>t_vec<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span>number<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 0.025</span>
+
+<span class="token keyword">import</span> swifter
+<span class="token keyword">def</span> <span class="token function">apply_myfunc_to_DF_swiftly</span><span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> df<span class="token punctuation">.</span>swifter<span class="token punctuation">.</span><span class="token builtin">apply</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> row<span class="token punctuation">:</span> myfunc<span class="token punctuation">(</span><span class="token operator">*</span>row<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">pandas_apply_swiftly</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> apply_myfunc_to_DF_swiftly<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+t_swift <span class="token operator">=</span> timeit<span class="token punctuation">.</span>Timer<span class="token punctuation">(</span><span class="token keyword">lambda</span><span class="token punctuation">:</span> pandas_apply_swiftly<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>t_swift<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span>number<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 74</span>
+
+
+<span class="token keyword">def</span> <span class="token function">myfunc2</span><span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    df<span class="token punctuation">[</span><span class="token string">'new'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">.</span><span class="token builtin">apply</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> row<span class="token punctuation">:</span> myfunc<span class="token punctuation">(</span><span class="token operator">*</span>row<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> df
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> cpu_count<span class="token punctuation">,</span>Pool
+cores <span class="token operator">=</span> cpu_count<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#Number of CPU cores on your system</span>
+partitions <span class="token operator">=</span> cores <span class="token comment">#Define as many partitions as you want</span>
+<span class="token keyword">def</span> <span class="token function">parallelize</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> func<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    data_split <span class="token operator">=</span> np<span class="token punctuation">.</span>array_split<span class="token punctuation">(</span>data<span class="token punctuation">,</span> partitions<span class="token punctuation">)</span>
+    pool <span class="token operator">=</span> Pool<span class="token punctuation">(</span>cores<span class="token punctuation">)</span>
+    data <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span>pool<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>func<span class="token punctuation">,</span> data_split<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    pool<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> data
+<span class="token keyword">def</span> <span class="token function">apply_parall</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> parallelize<span class="token punctuation">(</span>data<span class="token punctuation">,</span>myfunc2<span class="token punctuation">)</span>
+t_parall <span class="token operator">=</span> timeit<span class="token punctuation">.</span>Timer<span class="token punctuation">(</span><span class="token keyword">lambda</span><span class="token punctuation">:</span> apply_parall<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>t_parall<span class="token punctuation">.</span>timeit<span class="token punctuation">(</span>number<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 18.73</span>
+
+
+</code></pre></div><p>可以看到，最快的还是向量化（在这个例子中，是 pandas 的 2000 倍）。所以，只要是能用向量化的地方，都尽量用向量化！
+对不太好向量化的函数，用 dask 要比 pandas 快 3 倍; 手动并行化几乎和 dask 差不多的效率。
+至于 swift, 看起来效果并不是很好</p> <p>其他向量化的例子</p> <div class="language-python extra-class"><pre class="language-python"><code>
+defdef  gt_5_bikes_vectorizedgt_5_bi <span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>x <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
+</code></pre></div><h1 id="pythonic"><a href="#pythonic" class="header-anchor">#</a> pythonic</h1> <p>python 3 中，合并字典的方式
+x={'a':2,'b':4}
+y={'a':5,'c':1}
+z = {**x,**y}
+z
+{'a': 5, 'b': 4, 'c': 1}
+注意，相同键，值用的是后一个。</p> <h1 id="线性回归"><a href="#线性回归" class="header-anchor">#</a> 线性回归</h1> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LinearRegression
+
+
+
+model2 <span class="token operator">=</span> LinearRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+model2<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x<span class="token punctuation">.</span>wdd<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">27</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> x<span class="token punctuation">.</span>n<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">27</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+matplotlib<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'figure.figsize'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">.</span>wdd<span class="token punctuation">.</span>values<span class="token punctuation">,</span> x<span class="token punctuation">.</span>n<span class="token punctuation">.</span>values<span class="token punctuation">,</span>color<span class="token operator">=</span><span class="token string">'g'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">.</span>wdd<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">27</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> model2<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>x<span class="token punctuation">.</span>wdd<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">27</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>color<span class="token operator">=</span><span class="token string">'k'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">u&quot;处理逃单量和逃单万订单之间的关系&quot;</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">u'逃单万订单'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">u'处理逃单门店量'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="python-环境管理"><a href="#python-环境管理" class="header-anchor">#</a> python 环境管理</h2> <p>Pipfile 与 Pipfile.lock 是社区拟定的依赖管理文件，用于替代过于简陋的 requirements.txt</p> <p>pipenv: 结合了 Pipfile 、pip 和 virtualenv</p> <p>conda 本身也可以创建</p> <div class="language-shell extra-class"><pre class="language-shell"><code>conda create -n tf <span class="token assign-left variable">python</span><span class="token operator">=</span><span class="token number">3.6</span> anaconda
+
+<span class="token comment"># 安装包既可以用 conda，可以激活环境之后用pip3安装</span>
+
+<span class="token comment"># conda install -n tf -c https://conda.binstar.org/menpo opencv</span>
+<span class="token comment"># pip3 install tensorflow==2.1</span>
+<span class="token comment"># conda install -n tf pytorch torchvision -c pytorch</span>
+<span class="token comment"># python3 -m pip install mxnet==1.4.1 gluonts</span>
+
+<span class="token comment">#  Pycharm 等 IDE 在执行的时候，可以设置将 Source Root 加入到 PYTHONPATH，但如果是在 Shell 等运行，则我们的一些本地代码可能找不到</span>
+<span class="token comment"># 例如，我们执行 paradise 库下的一些代码，就会抱怨说找不到  paradise</span>
+<span class="token comment"># 这可以用如下方式解决： /Users/zhangxisheng/anaconda/envs/tf/lib/python3.6/site-packages/ 下创建一个 paradise.pth 文件，里面下上路径  `/Users/zhangxisheng/mtdp/paradise/` ,这样就可以了。</span>
+
+
+<span class="token builtin class-name">source</span> activate tf
+
+<span class="token comment"># 我们在这个环境下安装了 tensorflow 最新版本,以及 simple tensorflow serving</span>
+/Users/zhangxisheng/anaconda/envs/tf/bin/tensorboard --logdir<span class="token operator">=</span><span class="token string">''</span>
+
+
+
+<span class="token builtin class-name">source</span> deactivate
+
+<span class="token comment"># 删除环境！</span>
+conda remove -n yourenvname --all
+
+</code></pre></div><h2 id="高级语法"><a href="#高级语法" class="header-anchor">#</a> 高级语法</h2> <ol><li><p>jupyter 中，shift tab 一般是回退一个 tab，但是如果光标在函数上，会显示函数的注释</p></li> <li><p>python3 中的 f-string</p></li></ol> <p>高级拆包</p> <div class="language-python extra-class"><pre class="language-python"><code>a<span class="token punctuation">,</span> <span class="token operator">*</span>b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span>
+
+<span class="token comment"># a</span>
+<span class="token comment"># 1</span>
+<span class="token comment"># b</span>
+<span class="token comment"># [2, 3]</span>
+
+
+a<span class="token punctuation">,</span><span class="token operator">*</span>b<span class="token punctuation">,</span>c <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span>
+
+
+<span class="token comment"># in 代替 or</span>
+
+<span class="token keyword">if</span> x <span class="token operator">==</span> <span class="token number">1</span> <span class="token keyword">or</span> x <span class="token operator">==</span> <span class="token number">2</span> <span class="token keyword">or</span> x <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">:</span>
+     <span class="token keyword">pass</span>
+
+<span class="token keyword">if</span> x <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token keyword">pass</span>
+
+
+
+</code></pre></div><h2 id="常用"><a href="#常用" class="header-anchor">#</a> 常用</h2> <h3 id="启动脚本个性化"><a href="#启动脚本个性化" class="header-anchor">#</a> 启动脚本个性化</h3> <p>import site
+site.getusersitepackages()</p> <p>eg. /Users/zhangxisheng/.local/lib/python2.7/site-packages</p> <p>然后建立 sitecustomized.py 脚本，里面的语句将在 python 启动的时候自动执行。</p> <p>但是，sitecustomized.py 脚本中 import 的包，还是不能找到。</p> <p>应该可以 用 PYTHONSTARTUP 变量指向，但是确实这样是不好的做法，所以还是放弃自动引入包。</p> <h3 id="pep8"><a href="#pep8" class="header-anchor">#</a> PEP8</h3> <p>有时候抱怨 <code>module level import not at top of file</code>, 可以注释 # noqa, 就不会被检查了</p> <h2 id="疑难点"><a href="#疑难点" class="header-anchor">#</a> 疑难点</h2> <p>df.to_csv('foo.txt',index=False,header=False, quoting=csv.QUOTE_NONE)</p> <div class="language-python extra-class"><pre class="language-python"><code>lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> x <span class="token keyword">in</span> lst<span class="token punctuation">:</span>
+    <span class="token keyword">if</span> x <span class="token operator">&lt;</span> <span class="token number">6</span><span class="token punctuation">:</span>
+        lst<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+lst
+<span class="token comment"># [2, 4, 6, 7, 8]</span>
+</code></pre></div><p>因为迭代器这里是按照索引去得带的，当把 1 删除之后，2 其实成了列表 lst 的首个元素，但是迭代器还是取看第二个位置的，因此 2 被跳过了。</p> <p>正确的写法</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token punctuation">[</span>x <span class="token keyword">for</span> x <span class="token keyword">in</span> lst <span class="token keyword">if</span> x <span class="token operator">&gt;=</span> <span class="token number">6</span><span class="token punctuation">]</span>
+</code></pre></div><p>Another solution would be to iterate in reverse. That way, no elements can be skipped since removing an item from the list will only affect the indexes of elements that were already handled. This can either be done manually using index-based iteration starting from the end, or using reversed():</p> <div class="language-python extra-class"><pre class="language-python"><code>lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">reversed</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> x <span class="token operator">&lt;</span> <span class="token number">6</span><span class="token punctuation">:</span>
+        lst<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+</code></pre></div><p>Finally, one can also iterate over a copy of the list, so when removing elements from the original list, the iterator is not affected.</p> <div class="c-callout c-callout–warning"><strong class="c-callout__title">Warning</strong> <p class="c-callout__paragraph">
+不要在循环中用 remove 删除元素列表！
+</p></div> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    <span class="token keyword">break</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span> <span class="token comment"># Not executed as there is a break</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;No Break&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><p>foo 循环后直接跟 else 的用法可还行？</p> <h3 id="函数的默认参数"><a href="#函数的默认参数" class="header-anchor">#</a> 函数的默认参数</h3> <blockquote><p>Default parameter values are always evaluated when, and only when, the “def” statement they belong to is executed</p></blockquote> <p>函数定义中绑定默认参数，而不是在函数执行时
+合理性： 函数也是对象，在定义时被执行得到的对象</p> <p><strong>def</strong> 是一个可执行语句！</p> <h2 id="多进程并行-parallel-multiprocessing"><a href="#多进程并行-parallel-multiprocessing" class="header-anchor">#</a> 多进程并行 Parallel Multiprocessing</h2> <p>GIL 是计算机程序设计语言解释器用于同步线程的一种机制，它使得任何时刻仅有一个线程在执行。即便在多核心处理器上，使用 GIL 的解释器也只允许同一时间执行一个线程。</p> <p>因为 GIL 的存在，多线程看来是不可能的了，好在，还可以用 multiprocessing 开启多进程。</p> <p>IO 密集型任务选择 multiprocessing.dummy，CPU 密集型任务选择 multiprocessing</p> <h3 style="color:inherit;line-height:inherit;margin-top:1.6em;margin-bottom:1.6em;font-weight:bold;border-bottom:2px solid rgb(239, 112, 96);font-size:1.3em;"><span style="font-size:inherit;line-height:inherit;display:inline-block;font-weight:normal;background:rgb(239, 112, 96);color:rgb(255, 255, 255);padding:3px 10px 1px;border-top-right-radius:3px;border-top-left-radius:3px;margin-right:3px;">第一种</span></h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token operator">%</span><span class="token operator">%</span>time
+
+<span class="token keyword">from</span> joblib <span class="token keyword">import</span> Parallel<span class="token punctuation">,</span> delayed
+<span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> cpu_count
+
+executor <span class="token operator">=</span> Parallel<span class="token punctuation">(</span>n_jobs<span class="token operator">=</span>cpu_count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> backend<span class="token operator">=</span><span class="token string">'multiprocessing'</span><span class="token punctuation">)</span>
+tasks <span class="token operator">=</span> <span class="token punctuation">(</span>delayed<span class="token punctuation">(</span>preds_11<span class="token punctuation">)</span><span class="token punctuation">(</span>poiid<span class="token punctuation">)</span> <span class="token keyword">for</span> poiid <span class="token keyword">in</span> df<span class="token punctuation">.</span>poiid<span class="token punctuation">.</span>unique<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+results <span class="token operator">=</span> executor<span class="token punctuation">(</span>tasks<span class="token punctuation">)</span>
+
+</code></pre></div><h3 style="color:inherit;line-height:inherit;margin-top:1.6em;margin-bottom:1.6em;font-weight:bold;border-bottom:2px solid rgb(239, 112, 96);font-size:1.3em;"><span style="font-size:inherit;line-height:inherit;display:inline-block;font-weight:normal;background:rgb(239, 112, 96);color:rgb(255, 255, 255);padding:3px 10px 1px;border-top-right-radius:3px;border-top-left-radius:3px;margin-right:3px;">第二种</span></h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Pool
+pool <span class="token operator">=</span> Pool<span class="token punctuation">(</span><span class="token punctuation">)</span>
+results <span class="token operator">=</span> pool<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>preds_11<span class="token punctuation">,</span> df<span class="token punctuation">.</span>poiid<span class="token punctuation">.</span>unique<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+pool<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pool<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="应用"><a href="#应用" class="header-anchor">#</a> 应用</h2> <h3 id="替换目录下所有文件中的某个关键词"><a href="#替换目录下所有文件中的某个关键词" class="header-anchor">#</a> 替换目录下所有文件中的某个关键词</h3> <div class="language-python extra-class"><pre class="language-python"><code>
+<span class="token keyword">import</span> os<span class="token punctuation">,</span> re
+
+<span class="token keyword">def</span> <span class="token function">change</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    match <span class="token operator">=</span> re<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">'.*{% asset_img (.*) %}'</span><span class="token punctuation">,</span> s<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> match<span class="token punctuation">:</span>
+        url <span class="token operator">=</span> match<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span> url
+        <span class="token keyword">return</span> <span class="token string">'![]('</span> <span class="token operator">+</span> url <span class="token operator">+</span> <span class="token string">')\n'</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> s
+
+
+root <span class="token operator">=</span> <span class="token string">&quot;/Users/zhangxisheng/Documents/personal/grocery-store-of-lancezhange/section8/&quot;</span>
+
+<span class="token keyword">for</span> dirpath<span class="token punctuation">,</span> dirnames<span class="token punctuation">,</span> filenames <span class="token keyword">in</span> os<span class="token punctuation">.</span>walk<span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> filepath <span class="token keyword">in</span> filenames<span class="token punctuation">:</span>
+        file_name <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>dirpath<span class="token punctuation">,</span> filepath<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> file_name<span class="token punctuation">.</span>endswith<span class="token punctuation">(</span><span class="token string">'.md'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span> file_name
+            <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>file_name<span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+                lines <span class="token operator">=</span> f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>file_name<span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+                <span class="token keyword">for</span> line <span class="token keyword">in</span> lines<span class="token punctuation">:</span>
+                    line <span class="token operator">=</span> change<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+                    f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+
+</code></pre></div><p>cpython
+.pyx 文件</p> <p>@cython.boundscheck(False) # Deactivate bounds checking
+@cython.wraparound(False) # Deactivate negative indexing.</p> <p>series.dtype == np.float64:
+fi16 = np.finfo(np.float16)</p> <p>series.dtype == np.int64: Machine limits for integer types.
+ii8 = np.iinfo(np.int8)</p> <p>ntol = npos + nneg</p> <h2 id="python3-8"><a href="#python3-8" class="header-anchor">#</a> python3.8</h2> <h2 id="参考资料"><a href="#参考资料" class="header-anchor">#</a> 参考资料</h2> <ul><li><p><a href="http://pyzh.readthedocs.org/en/latest/python-questions-on-stackoverflow.html" target="_blank" rel="noopener noreferrer">stackoverflow 上一些 python 问题合集 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="http://book.pythontips.com/en/latest/index.html" target="_blank" rel="noopener noreferrer">python tips/intermediate python<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://github.com/taizilongxu/interview_python" target="_blank" rel="noopener noreferrer">关于 python 的面试题<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul> <ul><li><p><a href="https://gist.github.com/sloria/7001839" target="_blank" rel="noopener noreferrer">The Best of the Best Practices(BOBP) GUide for Python<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://github.com/shik3519/machine-learning/blob/master/tutorials/003-python-basics-numpy-regex.ipynb" target="_blank" rel="noopener noreferrer">python-basics-numpy-regex<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/grocery_store/section3/cpp.html" class="prev">
+        C++ 知识点 {ignore=ture}
+      </a></span> <span class="next"><a href="/grocery_store/section3/java.html">
+        Java {ignore=true}
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/grocery_store/assets/js/app.47d3b9e2.js" defer></script><script src="/grocery_store/assets/js/3.e15ba04f.js" defer></script><script src="/grocery_store/assets/js/75.acb4412a.js" defer></script>
+  </body>
+</html>
