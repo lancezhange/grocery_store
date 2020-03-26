@@ -14,7 +14,7 @@ features:
 footer: MIT Licensed | Lancezhange
 ---
 
-![](https://travis-ci.com/lancezhange/grocery-store-of-lancezhange.svg?branch=docs)
+![](https://travis-ci.com/lancezhange/grocery_store.svg?branch=master)
 
 # 前言
 
