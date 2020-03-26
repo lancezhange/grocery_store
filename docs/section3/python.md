@@ -1806,6 +1806,16 @@ Finally, one can also iterate over a copy of the list, so when removing elements
 </p>
 </div>
 
+```python
+for i in range(1, 4):
+    print(i)
+    break
+else: # Not executed as there is a break
+    print("No Break")
+```
+
+foo 循环后直接跟 else 的用法可还行？
+
 ### 函数的默认参数
 
 > Default parameter values are always evaluated when, and only when, the “def” statement they belong to is executed

@@ -12,7 +12,7 @@ script:
 
 branches:
   only:
-    - master
+    - note
 
 deploy:
   provider: pages
